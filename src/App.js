@@ -1,6 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './Components/Nav';
+import LandingPage from './Pages/LandingPage';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <BrowserRouter>
       <Nav/>
       <Routes>
-        <Route/>
+        <Route path="/" index element={<LandingPage />}/>
       </Routes>
       
       </BrowserRouter>

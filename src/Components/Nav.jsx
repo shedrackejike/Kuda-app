@@ -1,40 +1,111 @@
-import { Flex ,Box , Image, Text} from "@chakra-ui/react"
+import { Flex, Box, Image, Text } from "@chakra-ui/react";
+import { MdArrowDropDown } from "react-icons/md";
 
 const Nav = () => {
   return (
-    <Flex bg={'red'} h={'22%'} w={'100%'}>
-     <Flex w={'100%'} bg={'yellow'} m={'auto'} display={'flex'} justify={'space-around'} align={'center'}>
-     <Box border={'1px'}>
-        <Image
-                  objectFit="cover"
-                  src="/images/kudalogo.png"
-                  alt="logo"
-                  width={'70px'}
-                  mb={''}
-                />
-        </Box>
+    <Flex h="65px" w={"100%"}  bg={'red'}>
+      <Flex
+        w={"97%"}
+        h={"100%"}
+        m={"auto"}
+        display={"flex"}
+        justify={"space-around"}
+        align={"center"}
+        
+      >
+        <Flex w={"60%"}>
+          <Box>
+            <Image
+              objectFit="cover"
+              src="/images/kudalogo.png"
+              alt="logo"
+              width={"70px"}
+              mb={""}
+            />
+          </Box>
 
-       <Flex border={'1px'} w={'50%'} justify={'space-around'}>
+          <Flex w={"70%"} justify={"space-evenly"}>
+            <Text
+              display={"flex"}
+              alignItems={"center"}
+              textColor={"#57357F"}
+              fontSize={"15"}
+              fontWeight={"semibold"}
+            >
+              Personal <MdArrowDropDown />
+            </Text>
+            <Text
+              display={"flex"}
+              alignItems={"center"}
+              textColor={"#57357F"}
+              fontSize={"15"}
+              fontWeight={"semibold"}
+            >
+              Business <MdArrowDropDown />
+            </Text>
+            <Text
+              display={"flex"}
+              alignItems={"center"}
+              textColor={"#57357F"}
+              fontSize={"15"}
+              fontWeight={"semibold"}
+            >
+              Company <MdArrowDropDown />
+            </Text>
+            <Text
+              display={"flex"}
+              alignItems={"center"}
+              textColor={"#57357F"}
+              fontSize={"15"}
+              fontWeight={"semibold"}
+            >
+              Help <MdArrowDropDown />
+            </Text>
+          </Flex>
+        </Flex>
 
-       <Text>Personal</Text>
-        <Text>Business</Text>
-        <Text>Company</Text>
-        <Text>Help</Text>
+        <Flex h={"12"} w={"25%"} justify={"space-around"} align={"center"}>
+          <Box
+            textColor={"#57357F"}
+            w={"26%"}
+            textAlign={"center"}
+            fontSize={"12"}
+          >
+            Sign In
+          </Box>
+          <Box
+            h={"10"}
+            bg={"#40196D"}
+            w={"50%"}
+            textAlign={"center"}
+            textColor={"white"}
+            fontSize={"14"}
+            fontWeight={"bold"}
+            borderRadius={"9"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            join Kuda
+          </Box>
 
-       </Flex>
-
-       <Flex border={'1px'} w={'20%'} justify={'space-around'}>
-            <Box>Sign In</Box>
-            <Box>join Kuda</Box>
-       </Flex>
-
-       <Box border={'1px'} w={'5%'}>
-        w
-       </Box>
-     </Flex>
-
+          <Box
+            h={"8"}
+            w={"9"}
+            borderRadius="full"
+            justify={"center"}
+            alignItems={"center"}
+            backgroundImage="/images/niger.jpeg"
+            backgroundRepeat={"no-repeat"}
+            backgroundPosition={"center"}
+            backgroundSize={"cover"}
+            display={"flex"}
+            margin={"auto"}
+          ></Box>
+        </Flex>
+      </Flex>
     </Flex>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
