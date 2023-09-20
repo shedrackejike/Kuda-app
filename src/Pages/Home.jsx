@@ -1,10 +1,11 @@
-import { Box, Flex, Link, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { Box, Flex, Link, Image, Text } from "@chakra-ui/react";
 import { BsFillCreditCardFill } from "react-icons/bs";
 import { FaBalanceScaleRight, FaPaperPlane } from "react-icons/fa";
 import { HiShieldExclamation } from "react-icons/hi";
 import { WiMoonAltWaxingGibbous1 } from "react-icons/wi";
 import { LuChevronRight } from "react-icons/lu";
+import Testimonial from "../Subpages/Home/Testimonial";
 
 const Home = () => {
   return (
@@ -341,9 +342,6 @@ const Home = () => {
         </Flex>
       </Box>
 
-
-
-
       <Box w={"90%"} margin={"auto"} h={"80%"}>
         <Flex
           h={"95%"}
@@ -439,17 +437,15 @@ const Home = () => {
         </Flex>
       </Box>
 
-
-      <Box  w={"90%"} margin={"auto"} h={"80%"}>
+      <Box w={"90%"} margin={"auto"} h={"80%"}>
         <Flex
-      
           h={"95%"}
           w={"95%"}
           margin={"auto"}
           alignItems={"center"}
           justifyContent={"space-between"}
         >
-          <Box  w={"40%"} h={"90%"}>
+          <Box w={"40%"} h={"90%"}>
             <Image
               objectFit="inherit"
               src="/images/fees.png"
@@ -459,18 +455,19 @@ const Home = () => {
             />
           </Box>
 
-          <Box  w={"45%"} h={"40%"}>
+          <Box w={"45%"} h={"40%"}>
             <Box h={"39%"} w={"80%"}>
               <Text fontSize={"36px"} fontWeight={"bold"} textColor={"#57357F"}>
-              Fees as clear as glass.
+                Fees as clear as glass.
               </Text>
             </Box>
-            <Box  h={"35%"} w={"74.9%"} mt={"2"}>
+            <Box h={"35%"} w={"74.9%"} mt={"2"}>
               <Text>
-              We’re serious about free banking, and we will never, ever charge you for anything without your consent.
+                We’re serious about free banking, and we will never, ever charge
+                you for anything without your consent.
               </Text>
             </Box>
-            <Flex  h={"18%"} w={"70%"} mt={"2"}>
+            <Flex h={"18%"} w={"70%"} mt={"2"}>
               <Link>
                 <Text
                   textColor={"#57357F"}
@@ -485,8 +482,8 @@ const Home = () => {
           </Box>
         </Flex>
       </Box>
-
-
+    <Testimonial/>
+    
     </Box>
   );
 };
