@@ -8,6 +8,7 @@ import { LuChevronRight } from "react-icons/lu";
 import Testimonial from "../Subpages/Home/Testimonial";
 import Worlds from "../Subpages/Home/Worlds";
 import Partners from "../Subpages/Home/Partners";
+import Choose from "../Subpages/Home/Choose";
 
 const Home = () => {
   return (
@@ -487,7 +488,7 @@ const Home = () => {
     <Testimonial/>
     <Worlds/>
     <Partners/>
-    
+    <Choose/>
 
     <Box>
 
