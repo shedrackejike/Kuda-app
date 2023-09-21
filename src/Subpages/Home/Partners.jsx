@@ -11,13 +11,15 @@ const Partners = () => {
     },[])
 
   return (
-    <Box bg={'#FBFBFB'}  margin={"auto"} minH={"40%"} >
-
-        <Box w={'50%'} minH={'60px'}  margin={'auto'} mt={'9px'}>
+    <Box bg={'#FBFBFB'}  margin={"auto"} minH={"60%"} alignItems={'center'} justifyContent={'center'} display={'flex'}>
+      
+      <Box  minH={'70%'} w={'90%'}>
+        
+      <Box  w={'50%'} minH={'60px'}  margin={'auto'} mt={'%'}>
             <Text textAlign={'center'} fontSize={'30px'} fontWeight={'bold'} textColor={"#57357F"}>Our Partners</Text>
         </Box>
 
-      <Flex  mt={5}>
+      <Flex  mt={'1%'} >
              {parters?.map(data =>(
             <Flex  w={'90%'}   minH={'80px'}  alignItems={'center'} justifyContent={'center'} margin={'auto'}>
           <Box  h={'40px'} w={'160px'} >
@@ -32,6 +34,7 @@ const Partners = () => {
   </Flex>
     ))} 
       </Flex>
+      </Box>
 
    </Box>
     )
