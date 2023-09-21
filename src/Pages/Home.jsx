@@ -7,6 +7,7 @@ import { WiMoonAltWaxingGibbous1 } from "react-icons/wi";
 import { LuChevronRight } from "react-icons/lu";
 import Testimonial from "../Subpages/Home/Testimonial";
 import Worlds from "../Subpages/Home/Worlds";
+import Partners from "../Subpages/Home/Partners";
 
 const Home = () => {
   return (
@@ -485,6 +486,8 @@ const Home = () => {
       </Box>
     <Testimonial/>
     <Worlds/>
+    <Partners/>
+    
 
     <Box>
 
