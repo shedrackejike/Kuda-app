@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import { testimonialData } from '../../utils/testimonials'
+import Marquee from 'react-fast-marquee'
+
 
 export default function Testimonial() {
 const [monials,setMonials] = useState([])
@@ -11,8 +13,8 @@ setMonials(testimonialData)
 
 
   return (
-    <Box  border={"1px"} margin={"auto"} h={"65%"}>
-    <Box border={"1px"} h={"15%"} w={"90%"} margin={"auto"}>
+    <Box   margin={"auto"} h={"65%"}>
+    <Box  h={"15%"} w={"90%"} margin={"auto"}>
       <Text
         textColor={"#57357F"}
         textAlign={"center"}
@@ -23,37 +25,39 @@ setMonials(testimonialData)
       </Text>
     </Box>
 
-    <Flex mt={'5'} w={'100%'} bg={"red"} wrap={"wrap"} h={'70%'} border={'1px'} alignItems={'center'} justifyContent={'center'}>
+   <Flex mt={'5'} w={'100%'} bg={""}  minH={'100px'} border={''} alignItems={'center'} justifyContent={'center'}>
+   <Marquee>
 
-    {monials?.map(item => (
-      <Box mt={'5'}  h={'80%'} w={'30%'} alignItems={'center'} justifyContent={'center'} display={'flex'} boxShadow="md" p="1" rounded="md" bg="white">
-          <Box   h={'84%'} w={'90%'}>
-            <Box  h={'50%'} w={'100%'} >
-              <Text fontSize={'14px'}>{item.comment}</Text>
-            </Box>
+{monials?.map(item => (
+  <Box mt={'5'}  minH={'200px'} w={'400px'} mx={4} alignItems={'center'} justifyContent={'center'} display={'flex'} boxShadow="md" p="1" rounded="md" bg="white" >
+      <Box   h={'84%'} w={'90%'}>
+        <Box  minH='50px' w={'100%'} >
+          <Text fontSize={'14px'}>{item.comment}</Text>
+        </Box>
 
-           <Flex  h={'44%'} w={'90%'} mt={3} alignItems={'center'}>
-           <Box  h={'74%'} w={'22%'} borderRadius={'50%'}>
-            <Image
-            borderRadius={'50%'}
-          objectFit="inherit"
-          src={item.image}
-          alt="logo"
-          width={"fit-content"}
-          boxSize="100%"
-        />
+       <Flex  h={'44%'} w={'90%'} mt={3} alignItems={'center'}>
+       <Box  h={'50px'} w={'50px'} borderRadius={'50%'}>
+        <Image
+        borderRadius={'50%'}
+      objectFit="inherit"
+      src={item.image}
+      alt="logo"
+      width={"fit-content"}
+      boxSize="100%"
+    />
 
-            </Box>
-            <Text marginLeft={'2'}>{item.name}</Text>
-           </Flex>
+        </Box>
+        <Text marginLeft={'2'}>{item.name}</Text>
+       </Flex>
 
-          </Box>
       </Box>
-    ))}
+  </Box>
+))}
 
-      
+  
 
-    </Flex>
+   </Marquee>
+</Flex>
     
   </Box>
   )
