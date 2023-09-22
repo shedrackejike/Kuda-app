@@ -19,8 +19,8 @@ const Choose = () => {
 
         <Flex  mt={5}  minH={'700px'} >
             {chose?.map(data =>(
-        <Flex  w={'90%'}   minH={'200px'}  alignItems={'center'} justifyContent={'center'} margin={'auto'}>
-        <Box  minH={'560px'} w={'1000px'}  boxShadow="md" p="1" rounded="md" bg="white">
+        <Flex  w={'90%'}   minH={'300px'}  alignItems={'center'} justifyContent={'center'} margin={'auto'}>
+        <Box  minH={'560px'} w={'1000px'}  boxShadow="2xl" p="1" rounded="md" bg="white">
         <Image
         objectFit="contain"
           src={data.image}

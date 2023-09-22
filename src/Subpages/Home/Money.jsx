@@ -9,14 +9,15 @@ const Money = () => {
         setMoney(moneyData)
     },[])
   return (
-    <Box
+   <Box h={'70%'} w={'100'} borderBottom={'1px'}>
+     <Box
       h={"60%"}
       w={"80%"}
       margin={"auto"}
       alignItems={"center"}
       justifyContent={"center"}
       display={"flex"}
-      boxShadow="md" p="1" rounded="md" bg={"#EFF1FF"}
+      boxShadow="2xl" p="1" rounded="md" bg={"#EFF1FF"}
     >
 
       {money?.map(item => (
@@ -70,6 +71,7 @@ const Money = () => {
       ))}
 
     </Box>
+   </Box>
   );
 };
 
