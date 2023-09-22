@@ -9,6 +9,7 @@ import Testimonial from "../Subpages/Home/Testimonial";
 import Worlds from "../Subpages/Home/Worlds";
 import Partners from "../Subpages/Home/Partners";
 import Choose from "../Subpages/Home/Choose";
+import Money from "../Subpages/Home/Money";
 
 const Home = () => {
   return (
@@ -489,6 +490,7 @@ const Home = () => {
     <Worlds/>
     <Partners/>
     <Choose/>
+    <Money/>
 
     <Box>
 
