@@ -10,6 +10,7 @@ import Worlds from "../Subpages/Home/Worlds";
 import Partners from "../Subpages/Home/Partners";
 import Choose from "../Subpages/Home/Choose";
 import Money from "../Subpages/Home/Money";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -491,6 +492,7 @@ const Home = () => {
     <Partners/>
     <Choose/>
     <Money/>
+    <Footer/>
 
     <Box>
 
