@@ -31,6 +31,8 @@ const Nav = () => {
               textColor={"#57357F"}
               fontSize={"15"}
               fontWeight={"semibold"}
+              _hover={""}
+              cursor={"pointer"}
             >
               Personal <MdArrowDropDown />
             </Text>
@@ -40,6 +42,8 @@ const Nav = () => {
               textColor={"#57357F"}
               fontSize={"15"}
               fontWeight={"semibold"}
+              _hover={""}
+              cursor={'pointer'}
             >
               Business <MdArrowDropDown />
             </Text>
@@ -49,6 +53,8 @@ const Nav = () => {
               textColor={"#57357F"}
               fontSize={"15"}
               fontWeight={"semibold"}
+              _hover={""}
+              cursor={'pointer'}
             >
               Company <MdArrowDropDown />
             </Text>
@@ -58,6 +64,8 @@ const Nav = () => {
               textColor={"#57357F"}
               fontSize={"15"}
               fontWeight={"semibold"}
+              _hover={''}
+              cursor={'pointer'}
             >
               Help <MdArrowDropDown />
             </Text>
@@ -70,6 +78,7 @@ const Nav = () => {
             w={"26%"}
             textAlign={"center"}
             fontSize={"12"}
+            cursor={'pointer'}
           >
             Sign In
           </Box>
@@ -85,6 +94,7 @@ const Nav = () => {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
+            cursor={'pointer'}
           >
             join Kuda
           </Box>
