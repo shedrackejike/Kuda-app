@@ -25,7 +25,7 @@ const Nav = () => {
           </Box>
 
           <Flex w={"70%"} justify={"space-evenly"}>
-            <Text
+            <Text className="person"
               display={"flex"}
               alignItems={"center"}
               textColor={"#57357F"}
