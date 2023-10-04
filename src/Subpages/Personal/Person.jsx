@@ -13,7 +13,8 @@ import { VscIssueDraft} from 'react-icons/vsc'
 
 const Person = () => {
   return (
-    <Flex className='Personal' minH={'500px'} w={'500px'}  bg={"white"} borderRadius={'9'}  >
+
+     <Flex className='Personal' minH={'500px'} w={'500px'}   bg={"white"} borderRadius={'9'}   boxShadow="2xl" p="1" rounded="md" >
         <Box h={'350px'} w={'265px'}  mt={'5'}>
 
           <Box h={'300px'} w={'250px'}  alignItems={'center'} justifyContent={'center'}>
@@ -214,6 +215,7 @@ const Person = () => {
             </Box>
         </Box>
     </Flex>
+
   )
 }
 
