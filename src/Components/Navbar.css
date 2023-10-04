@@ -1,0 +1,12 @@
+/* .forf{
+    display: block;
+} */
+
+.Personal{
+    display: none;
+}
+
+.forf:hover .Personal{
+    display: flex;
+    color: white; 
+}
