@@ -7,74 +7,77 @@ import { WiMoonWaningCrescent1} from 'react-icons/wi'
 import { HiLightBulb} from 'react-icons/hi'
 import { FcFullBattery} from 'react-icons/fc'
 import { BsBagFill} from 'react-icons/bs'
+import { PiContactlessPaymentFill, PiTelevisionSimpleFill, PiGlobeThin} from 'react-icons/pi'
+import { BiSolidCar} from 'react-icons/bi'
+import { VscIssueDraft} from 'react-icons/vsc'
 
 const Person = () => {
   return (
-    <Flex className='Personal' minH={'500px'} w={'500px'} border={'1px'} bg={"purple"} borderRadius={'9'} >
-        <Box h={'350px'} w={'265px'} border={'1px'} mt={'5'}>
+    <Flex className='Personal' minH={'500px'} w={'500px'}  bg={"white"} borderRadius={'9'}  >
+        <Box h={'350px'} w={'265px'}  mt={'5'}>
 
-          <Box h={'300px'} w={'250px'} border={'1px'} alignItems={'center'} justifyContent={'center'}>
-          <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
-                    <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+          <Box h={'300px'} w={'250px'}  alignItems={'center'} justifyContent={'center'}>
+          <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
                        <AiTwotoneHome/>                         
                     </Box>
-                    <Text marginLeft={'3'}>
+                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
                     Discover Personal
                     </Text>
                 </Flex>
             </Box >
 
-             <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
-                    <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+             <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#E6FFF1'}>
                        <FaTelegramPlane/>                         
                     </Box>
-                    <Text marginLeft={'3'}>
+                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
                     Transfer & Spend
                     </Text>
                 </Flex>
             </Box >
 
-            <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
-                    <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+            <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
                        <WiMoonWaningCrescent1/>                         
                     </Box>
-                    <Text marginLeft={'3'}>
+                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
                     Budget Coming Soon
                     </Text>
                 </Flex>
             </Box >
 
-            <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
-                    <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+            <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#FFF8E5'}>
                        <GiBeard/>                         
                     </Box>
-                    <Text marginLeft={'3'}>
+                    <Text marginLeft={'3'} textColor={'black'} fontSize={'15'}>
                     Save               
                     </Text>
                 </Flex>
             </Box >
 
-            <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
-                    <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+            <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#DFE3FF'}>
                        <GiNetworkBars/>                         
                     </Box>
-                    <Text marginLeft={'3'}>
+                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
                     Investments
                     </Text>
                 </Flex>
             </Box >
 
-             <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
-                    <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+             <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#E6FFF1'}>
                        <AiFillCreditCard/>                         
                     </Box>
-                    <Text marginLeft={'3'} textColor={'black'}>
+                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
                     Kuda Card
 
                     </Text>
@@ -86,16 +89,16 @@ const Person = () => {
 
 
 
-        <Box minH={'499px'} w={'250px'} border={'1px'} alignItems={'center'} justifyContent={'center'} display={'flex'} borderRadius={'9'}>
-            <Box h={'450px'} w={'220px'} border={'1px'}>
+        <Box minH={'499px'} w={'250px'}  alignItems={'center'} justifyContent={'center'} display={'flex'} borderRadius={'9'} bg={'#F9F9F9'}>
+            <Box h={'450px'} w={'220px'} >
                 <Box>
-                    <Text fontSize={'10'}>PAYMENTS</Text>
+                    <Text fontSize={'10'} textColor={'black'} fontWeight={'bold'}>PAYMENTS</Text>
                 </Box>
 
 
-                <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#FDE3E3'}>
+                <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#FDE3E3'}>
                        <HiLightBulb/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
@@ -105,9 +108,9 @@ const Person = () => {
                  </Box >
 
 
-                 <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#E4FDEF'}>
+                 <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#E4FDEF'}>
                        <FcFullBattery/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
@@ -118,9 +121,9 @@ const Person = () => {
                  </Box >
 
 
-                 <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#E3F8FD'}>
+                 <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#E3F8FD'}>
                        <FaWifi/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
@@ -131,9 +134,9 @@ const Person = () => {
                  </Box >
 
 
-                 <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F1F3FD'}>
+                 <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F1F3FD'}>
                        <BsBagFill/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
@@ -143,10 +146,10 @@ const Person = () => {
                 </Flex>
                  </Box >
 
-                 <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#FDF6E3'}>
-                       <AiFillCreditCard/>                         
+                 <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#FDF6E3'}>
+                       <PiContactlessPaymentFill/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
                     Cardless Payments
@@ -155,53 +158,52 @@ const Person = () => {
                 </Flex>
                  </Box >
 
-                 <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiFillCreditCard/>                         
+                 <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#E3F8FD'}>
+                       <PiTelevisionSimpleFill/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
-                    Kuda Card
+                      TV
+                    </Text>
+                </Flex>
+                 </Box >
+
+                 <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+                       <PiGlobeThin/>                         
+                    </Box>
+                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
+                    Betting
 
                     </Text>
                 </Flex>
                  </Box >
 
-                 <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiFillCreditCard/>                         
+                 <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+                       <BiSolidCar/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
-                    Kuda Card
-
-                    </Text>
-                </Flex>
-                 </Box >
-
-                 <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiFillCreditCard/>                         
-                    </Box>
-                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
-                    Kuda Card
+                    Transport
 
                     </Text>
                 </Flex>
                  </Box >
 
                  <Box>
-                    <Text fontSize={'10'}>CREDIT</Text>
+                    <Text fontSize={'10'} textColor={'black'} fontWeight={'bold'}>CREDIT</Text>
                 </Box>
 
-                <Box  w={'250px'} border={'1px'} mt='2'>
-                <Flex h={'35px'} w={'200px'} border={'1px'} alignItems={'center'} marginLeft={'5'}>
-                    <Box h={'6'} w={'8'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiFillCreditCard/>                         
+                <Box  w={'250px'}  mt='2'>
+                <Flex h={'35px'} w={'200px'}  alignItems={'center'} marginLeft={'5'}>
+                    <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
+                       <VscIssueDraft/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
-                    Kuda Card
+                    Overdrafts
 
                     </Text>
                 </Flex>
