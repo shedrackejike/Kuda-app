@@ -1,7 +1,9 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
-import { AiTwotoneHome} from 'react-icons/ai'
-import { GiBeard} from 'react-icons/gi'
+import { AiTwotoneHome, AiFillCreditCard} from 'react-icons/ai'
+import { GiBeard, GiNetworkBars} from 'react-icons/gi'
+import { FaTelegramPlane} from 'react-icons/fa'
+import { WiMoonWaningCrescent1} from 'react-icons/wi'
 
 const Person = () => {
   return (
@@ -23,7 +25,7 @@ const Person = () => {
              <Box  w={'250px'} border={'1px'} mt='2'>
                 <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
                     <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiTwotoneHome/>                         
+                       <FaTelegramPlane/>                         
                     </Box>
                     <Text marginLeft={'3'}>
                     Transfer & Spend
@@ -34,7 +36,7 @@ const Person = () => {
             <Box  w={'250px'} border={'1px'} mt='2'>
                 <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
                     <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiTwotoneHome/>                         
+                       <WiMoonWaningCrescent1/>                         
                     </Box>
                     <Text marginLeft={'3'}>
                     Budget Coming Soon
@@ -56,7 +58,7 @@ const Person = () => {
             <Box  w={'250px'} border={'1px'} mt='2'>
                 <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
                     <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiTwotoneHome/>                         
+                       <GiNetworkBars/>                         
                     </Box>
                     <Text marginLeft={'3'}>
                     Investments
@@ -67,9 +69,9 @@ const Person = () => {
              <Box  w={'250px'} border={'1px'} mt='2'>
                 <Flex h={'40px'} w={'240px'} border={'1px'} alignItems={'center'} >
                     <Box h={'8'} w={'10'} border={'1px'} borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
-                       <AiTwotoneHome/>                         
+                       <AiFillCreditCard/>                         
                     </Box>
-                    <Text marginLeft={'3'}>
+                    <Text marginLeft={'3'} textColor={'black'}>
                     Kuda Card
 
                     </Text>
@@ -81,7 +83,7 @@ const Person = () => {
 
         <Box h={'499px'} w={'250px'} border={'1px'} alignItems={'center'} justifyContent={'center'} display={'flex'} borderRadius={'9'}>
             <Box h={'470px'} w={'220px'} border={'1px'}>
-
+                
             </Box>
         </Box>
     </Flex>
