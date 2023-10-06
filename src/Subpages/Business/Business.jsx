@@ -8,7 +8,7 @@ import { FaCashRegister} from 'react-icons/fa'
 
 const Business = () => {
   return (
-    <Flex minH={'270px'} w={'220px'}   bg={"white"}  alignItems={'center'} justifyContent={'center'} display={'flex'}  boxShadow="2xl" p="1" rounded="md" >
+    <Flex minH={'270px'} w={'220px'}   bg={"white"}  alignItems={'center'} justifyContent={'center'}  boxShadow="2xl" p="1" rounded="md" >
           <Box minH={'250px'} w={'200px'} >
 
                 <Box w={'250px'}  mt='2'>
