@@ -2,6 +2,7 @@ import { Flex, Box, Image, Text } from "@chakra-ui/react";
 import { MdArrowDropDown } from "react-icons/md";
 import "./Navbar.css"
 import Person from "../Subpages/Personal/Person";
+import Business from "../Subpages/Business/Business";
 
 const Nav = () => {
   return (
@@ -43,6 +44,8 @@ const Nav = () => {
               <Person/>
             </Box>
            </Box>
+
+            <Box  className="forf" position={"relative"}>
             <Text
               display={"flex"}
               alignItems={"center"}
@@ -54,6 +57,12 @@ const Nav = () => {
             >
               Business <MdArrowDropDown />
             </Text>
+            <Box className="Personal" position={"absolute"}>
+              <Business/>
+            </Box>
+            </Box>
+
+            
             <Text
               display={"flex"}
               alignItems={"center"}
