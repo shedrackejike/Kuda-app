@@ -4,6 +4,7 @@ import "./Navbar.css"
 import Person from "../Subpages/Personal/Person";
 import Business from "../Subpages/Business/Business";
 import Company from "../Subpages/Company/Company";
+import Help from "../Subpages/Help/Help";
 
 const Nav = () => {
   return (
@@ -81,7 +82,8 @@ const Nav = () => {
             </Box>
             </Box>
 
-            <Text
+           <Box className="forf" position={"relative"}>
+           <Text
               display={"flex"}
               alignItems={"center"}
               textColor={"#57357F"}
@@ -92,6 +94,12 @@ const Nav = () => {
             >
               Help <MdArrowDropDown />
             </Text>
+            <Box className="Personal" position={"absolute"}>
+              <Help/>
+            </Box>
+           </Box>
+
+
           </Flex>
         </Flex>
 
