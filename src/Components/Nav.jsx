@@ -3,6 +3,7 @@ import { MdArrowDropDown } from "react-icons/md";
 import "./Navbar.css"
 import Person from "../Subpages/Personal/Person";
 import Business from "../Subpages/Business/Business";
+import Company from "../Subpages/Company/Company";
 
 const Nav = () => {
   return (
@@ -63,6 +64,7 @@ const Nav = () => {
             </Box>
 
             
+            <Box className="forf" position={"relative"}>
             <Text
               display={"flex"}
               alignItems={"center"}
@@ -74,6 +76,11 @@ const Nav = () => {
             >
               Company <MdArrowDropDown />
             </Text>
+            <Box className="Personal" position={"absolute"}>
+              <Company/>
+            </Box>
+            </Box>
+
             <Text
               display={"flex"}
               alignItems={"center"}
