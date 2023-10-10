@@ -1,5 +1,6 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Link, Text } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom'
+import React, {useRef} from 'react'
 import { AiTwotoneHome, AiFillCreditCard} from 'react-icons/ai'
 import { GiBeard, GiNetworkBars} from 'react-icons/gi'
 import { FaTelegramPlane, FaWifi} from 'react-icons/fa'
@@ -12,9 +13,13 @@ import { BiSolidCar} from 'react-icons/bi'
 import { VscIssueDraft} from 'react-icons/vsc'
 
 const Person = () => {
+    const divRef  = useRef(null)
+    const handleClick = () => {
+        divRef.current.style.display = "none"
+    }
   return (
 
-     <Flex className='Personal' minH={'500px'} w={'500px'}   bg={"white"} borderRadius={'9'}   boxShadow="2xl" p="1" rounded="md" >
+     <Flex  className='Personal' ref={divRef} minH={'500px'} w={'500px'}   bg={"white"} borderRadius={'9'}   boxShadow="2xl" p="1" rounded="md" >
         <Box h={'350px'} w={'265px'}  mt={'5'}>
 
           <Box h={'300px'} w={'250px'}  alignItems={'center'} justifyContent={'center'}>
@@ -23,9 +28,11 @@ const Person = () => {
                     <Box h={'6'} w={'8'}  borderRadius={'50%'} alignItems={'center'} justifyContent={'center'} display={'flex'} bg={'#F3F5FF'}>
                        <AiTwotoneHome/>                         
                     </Box>
-                    <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
+                   <RouterLink to={"#"}>
+                   <Text onClick={()=>handleClick()} marginLeft={'3'} textColor={'black'} fontSize={'12'} cursor={'pointer'}>
                     Discover Personal
                     </Text>
+                   </RouterLink>
                 </Flex>
             </Box >
 
@@ -35,7 +42,7 @@ const Person = () => {
                        <FaTelegramPlane/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'12'}>
-                    Transfer & Spend
+                        <Link as={RouterLink} to="/Transfer">Transfer & Spend</Link>
                     </Text>
                 </Flex>
             </Box >
@@ -57,7 +64,7 @@ const Person = () => {
                        <GiBeard/>                         
                     </Box>
                     <Text marginLeft={'3'} textColor={'black'} fontSize={'15'}>
-                    Save               
+                    <Link as={RouterLink} to="/save">Save</Link>               
                     </Text>
                 </Flex>
             </Box >
