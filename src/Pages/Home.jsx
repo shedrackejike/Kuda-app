@@ -487,17 +487,14 @@ const Home = () => {
           </Box>
         </Flex>
       </Box>
-    <Testimonial/>
-    <Worlds/>
-    <Partners/>
-    <Choose/>
-    <Money/>
-    <Footer/>
+      <Testimonial />
+      <Worlds />
+      <Partners />
+      <Choose />
+      <Money />
+      <Footer />
 
-    <Box>
-
-    </Box>
-    
+      <Box></Box>
     </Box>
   );
 };
