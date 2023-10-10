@@ -4,8 +4,28 @@ import Nav from './Components/Nav';
 import LandingPage from './Pages/LandingPage';
 import Save from './Pages/Save';
 import Transfer from './Pages/Transfer';
+import { useEffect } from 'react';
 
 function App() {
+
+
+  useEffect(()=>{
+   const getEl =  document.querySelector(".Personal")
+
+   if (getEl) {
+    const elementStyle = window.getComputedStyle(getEl);
+console.log(elementStyle.display);
+if (elementStyle.display === "none") {
+   return console.log("Nkem e ekpo");
+}
+if (elementStyle.display !== "none") {
+  return  getEl.style.setProperty("display", "none")
+  
+}
+   }
+
+  },[])
+
   return (
     
     <ChakraProvider>
