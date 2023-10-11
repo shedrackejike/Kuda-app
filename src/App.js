@@ -5,6 +5,7 @@ import LandingPage from './Pages/LandingPage';
 import Save from './Pages/Save';
 import Transfer from './Pages/Transfer';
 import { useEffect } from 'react';
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -37,7 +38,7 @@ if (elementStyle.display !== "none") {
         <Route path="/Transfar" index element={<Transfer />}/>
 
       </Routes>
-      
+      <Footer/>
       </BrowserRouter>
     
   </ChakraProvider>

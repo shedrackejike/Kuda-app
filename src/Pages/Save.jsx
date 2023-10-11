@@ -4,6 +4,8 @@ import More from '../Subpages/Savea/More'
 import Savings from '../Subpages/Savea/Savings'
 import Real from '../Subpages/Savea/Real'
 import Meet from '../Subpages/Savea/Meet'
+import Strach from '../Subpages/Savea/Strach'
+import Money from '../Subpages/Home/Money'
 
 const Save = () => {
   return (
@@ -12,6 +14,8 @@ const Save = () => {
      <Savings/>   
     <Real/>
     <Meet/>
+    <Strach/>
+    <Money/>
    </Box>
   )
 }

@@ -9,7 +9,7 @@ const Money = () => {
         setMoney(moneyData)
     },[])
   return (
-   <Box h={'70%'} w={'100'} borderBottom={'1px'}>
+   <Box minH={'300px'} w={'100'} borderBottom={'1px'}>
      <Box
       h={"60%"}
       w={"80%"}

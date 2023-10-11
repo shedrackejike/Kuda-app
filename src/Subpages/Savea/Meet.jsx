@@ -10,14 +10,14 @@ const Meet = () => {
          setMeet(meetData)   
     ),[])
   return (
-    <Box minH={"500px"} w={'90%'}  margin={'auto'}>
+    <Box minH={"550px"} w={'90%'}  margin={'auto'}>
     {meet?.map((data)=>(
     <Flex minH={'500px'} w={'90%'}    justifyContent={'space-evenly'} alignItems={'center'}  marginLeft={'9'}>
 
         
          <Box minH={'250px'} w={'40%'}  >
             <Box minH={'80px'} w={'390px'} >
-                <Text fontSize={'45px'} fontWeight={'bold'} textColor={'#40196D'}>{data.head}</Text>
+                <Text fontSize={'35px'} fontWeight={'bold'} textColor={'#40196D'}>{data.head}</Text>
             </Box>
 
             <Box minH={'80px'} w={'400px'}  mt={'3'}>
