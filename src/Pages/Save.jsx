@@ -3,6 +3,7 @@ import React from 'react'
 import More from '../Subpages/Savea/More'
 import Savings from '../Subpages/Savea/Savings'
 import Real from '../Subpages/Savea/Real'
+import Meet from '../Subpages/Savea/Meet'
 
 const Save = () => {
   return (
@@ -10,6 +11,7 @@ const Save = () => {
      <More/>
      <Savings/>   
     <Real/>
+    <Meet/>
    </Box>
   )
 }

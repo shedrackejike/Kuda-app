@@ -12,7 +12,7 @@ const Savings = () => {
 
 
   return (
-    <Box minH={'300px'} w={'90%'}  margin={'auto'}  alignItems={'center'} justifyContent={'center'} display={'flex'}>
+    <Box minH={'360px'} w={'90%'}  margin={'auto'}  alignItems={'center'} justifyContent={'center'} display={'flex'}>
 
        {savings?.map(data =>(
          <Flex minH={'200px'} w={'97%'} justifyContent={'space-around'}  alignItems={'center'}>
