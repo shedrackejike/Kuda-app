@@ -5,16 +5,17 @@ import { meetData } from '../../utils/meet'
 const Meet = () => {
     const [meet,setMeet] = useState([])
 
+
     useEffect(() =>(
          setMeet(meetData)   
     ),[])
   return (
-    <Box minH={"650px"} w={'90%'} margin={'auto'}>
+    <Box minH={"500px"} w={'90%'}  margin={'auto'}>
     {meet?.map((data)=>(
-    <Flex minH={'500px'} w={'100%'}  justifyContent={'space-around'} alignItems={'center'} >
+    <Flex minH={'500px'} w={'90%'}    justifyContent={'space-evenly'} alignItems={'center'}  marginLeft={'9'}>
 
         
-         <Box minH={'250px'} w={'40%'} >
+         <Box minH={'250px'} w={'40%'}  >
             <Box minH={'80px'} w={'390px'} >
                 <Text fontSize={'45px'} fontWeight={'bold'} textColor={'#40196D'}>{data.head}</Text>
             </Box>
@@ -32,7 +33,7 @@ const Meet = () => {
 
         </Box>
 
-        <Box minH={'470px'} w={'50%'}
+        <Box minH={'450px'} w={'440%'}
          justify={"center"}
          alignItems={"center"}
          backgroundImage={data.image}  
