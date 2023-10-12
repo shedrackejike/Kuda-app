@@ -1,9 +1,13 @@
-import React from 'react'
+import { Box } from "@chakra-ui/react";
+import React from "react";
+import Send from "../Subpages/Transfer/Send";
 
 const Transfer = () => {
   return (
-    <div>Transfer</div>
-  )
-}
+    <Box>
+      <Send />
+    </Box>
+  );
+};
 
-export default Transfer
+export default Transfer;

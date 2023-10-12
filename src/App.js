@@ -5,7 +5,7 @@ import LandingPage from "./Pages/LandingPage";
 import Save from "./Pages/Save";
 import Transfer from "./Pages/Transfer";
 import { useEffect } from "react";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 
 function App() {
   useEffect(() => {
@@ -37,10 +37,10 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" index element={<LandingPage />} />
-          <Route path="/save" index element={<Save />} />
-          <Route path="/Transfar" index element={<Transfer />} />
+          <Route path="/save" element={<Save />} />
+          <Route path="/transfer" element={<Transfer />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </ChakraProvider>
   );

@@ -81,7 +81,7 @@ const Person = () => {
                 <FaTelegramPlane />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                <Link as={RouterLink} to="/Transfer">
+                <Link as={RouterLink} to="/transfer">
                   Transfer & Spend
                 </Link>
               </Text>
