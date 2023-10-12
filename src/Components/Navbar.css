@@ -2,11 +2,11 @@
     display: block;
 } */
 
-.Personal{
-    display: none;
+.Personal {
+  display: none;
 }
 
-.forf:hover .Personal{
-    display: flex;
-    color: rgb(68, 99, 107); 
+.forf:hover .Personal {
+  display: flex;
+  color: rgb(68, 99, 107);
 }
