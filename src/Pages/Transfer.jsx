@@ -5,6 +5,7 @@ import Atms from "../Subpages/Transfer/Atms";
 import Free from "../Subpages/Transfer/Free";
 import Card from "../Subpages/Transfer/Card";
 import Need from "../Subpages/Transfer/Need";
+import Shear from "../Subpages/Transfer/Shear";
 
 const Transfer = () => {
   return (
@@ -14,6 +15,7 @@ const Transfer = () => {
       <Free />
       <Card />
       <Need />
+      <Shear />
     </Box>
   );
 };
