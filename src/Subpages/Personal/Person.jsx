@@ -169,7 +169,9 @@ const Person = () => {
                 <AiFillCreditCard />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Kuda Card
+                <Link as={RouterLink} to={"/kuda"}>
+                  Kuda Card
+                </Link>
               </Text>
             </Flex>
           </Box>
