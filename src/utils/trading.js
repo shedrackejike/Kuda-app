@@ -1,10 +1,12 @@
 export const tradingData = [
   {
     id: "1",
-    head: "Your money-making options now include earning dividends and selling stocks.",
+    head: "We’ll show you up-to-date stock prices and send you trade notifications for your peace of mind.",
     Comment:
-      "Make a passive income from dividends paid directly into your trading account or sell your stocks at your convenience.",
-    button: "Learn more about selling stocks on Kuda >",
-    Image: "images/paypal.png",
+      "See current stock prices on your Kuda app and get an instant alert for every activity on your trading account.",
+    clear:
+      "Disclaimer: Stock prices fluctuate and trading involves possible loss of capital.",
+    button: "Join Kuda >",
+    Image: "images/trading.png",
   },
 ];
