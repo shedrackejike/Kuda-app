@@ -148,7 +148,9 @@ const Person = () => {
                 <GiNetworkBars />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Investments
+                <Link as={RouterLink} to={"/investment"}>
+                  Investments
+                </Link>
               </Text>
             </Flex>
           </Box>

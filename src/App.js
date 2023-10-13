@@ -5,6 +5,7 @@ import LandingPage from "./Pages/LandingPage";
 import Save from "./Pages/Save";
 import Transfer from "./Pages/Transfer";
 import { useEffect } from "react";
+import Investment from "./Pages/Investment";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/" index element={<LandingPage />} />
           <Route path="/save" element={<Save />} />
           <Route path="/transfer" element={<Transfer />} />
+          <Route path="/investment" element={<Investment />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
