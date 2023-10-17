@@ -3,6 +3,7 @@ import React from "react";
 import Visa from "../Subpages/Kudacard/Visa";
 import Savings from "../Subpages/Savea/Savings";
 import Activate from "../Subpages/Kudacard/Activate";
+import Needpay from "../Subpages/Kudacard/Needpay";
 
 const Kudacard = () => {
   return (
@@ -10,6 +11,7 @@ const Kudacard = () => {
       <Visa />
       <Savings />
       <Activate />
+      <Needpay />
     </Box>
   );
 };

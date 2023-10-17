@@ -31,7 +31,7 @@ const Activate = () => {
             <Box minH={"200px"} w={"40%"}>
               <Box minH={"50px"} w={"390px"}>
                 <Text
-                  fontSize={"45px"}
+                  fontSize={"32px"}
                   fontWeight={"bold"}
                   textColor={"#40196D"}
                 >
