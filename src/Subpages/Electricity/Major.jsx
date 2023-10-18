@@ -1,34 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Box, Text, Flex, Link } from "@chakra-ui/react";
-import { meterData } from "../../utils/meter";
+import { majorData } from "../../utils/major";
 
-const Meter = () => {
-  const [meter, setMeter] = useState([]);
+const Major = () => {
+  const [major, setMajor] = useState([]);
 
-  useEffect(() => setMeter(meterData), []);
+  useEffect(() => setMajor(majorData), []);
   return (
     <Box>
       <Box>
         <Box minH={"550px"} w={"90%"} margin={"auto"}>
-          {meter?.map((data) => (
+          {major?.map((data) => (
             <Flex
               minH={"500px"}
               w={"98%"}
               justifyContent={"space-around"}
               alignItems={"center"}
             >
-              <Box
-                minH={"470px"}
-                w={"45%"}
-                justify={"center"}
-                alignItems={"center"}
-                backgroundImage={data.image}
-                backgroundRepeat={"no-repeat"}
-                backgroundPosition={"center"}
-                backgroundSize={"contain"}
-                display={"flex"}
-              ></Box>
-
               <Box minH={"200px"} w={"40%"}>
                 <Box minH={"80px"} w={"390px"}>
                   <Text
@@ -45,7 +33,7 @@ const Meter = () => {
                 </Box>
                 <Box
                   minH={"40px"}
-                  w={"120px"}
+                  w={"160px"}
                   alignItems={"center"}
                   justifyContent={"center"}
                 >
@@ -60,6 +48,18 @@ const Meter = () => {
                   </Link>
                 </Box>
               </Box>
+
+              <Box
+                minH={"470px"}
+                w={"45%"}
+                justify={"center"}
+                alignItems={"center"}
+                backgroundImage={data.image}
+                backgroundRepeat={"no-repeat"}
+                backgroundPosition={"center"}
+                backgroundSize={"contain"}
+                display={"flex"}
+              ></Box>
             </Flex>
           ))}
         </Box>
@@ -68,4 +68,4 @@ const Meter = () => {
   );
 };
 
-export default Meter;
+export default Major;
