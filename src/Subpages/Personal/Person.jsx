@@ -208,7 +208,9 @@ const Person = () => {
                 <HiLightBulb />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Electricity
+                <Link as={RouterLink} to={"/electricity"}>
+                  Electricity
+                </Link>
               </Text>
             </Flex>
           </Box>

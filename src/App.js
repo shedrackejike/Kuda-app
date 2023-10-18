@@ -7,6 +7,7 @@ import Transfer from "./Pages/Transfer";
 import { useEffect } from "react";
 import Investment from "./Pages/Investment";
 import Kudacard from "./Pages/Kudacard";
+import Electricity from "./Pages/Electricity";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/investment" element={<Investment />} />
           <Route path="/kuda" element={<Kudacard />} />
+          <Route path="/electricity" element={<Electricity />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
