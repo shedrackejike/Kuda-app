@@ -229,7 +229,9 @@ const Person = () => {
                 <FcFullBattery />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Airtime
+                <Link as={RouterLink} to={"/airtime"}>
+                  Airtime
+                </Link>
               </Text>
             </Flex>
           </Box>

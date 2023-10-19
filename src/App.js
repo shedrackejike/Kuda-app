@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Investment from "./Pages/Investment";
 import Kudacard from "./Pages/Kudacard";
 import Electricity from "./Pages/Electricity";
+import Airtime from "./Pages/Airtime";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/investment" element={<Investment />} />
           <Route path="/kuda" element={<Kudacard />} />
           <Route path="/electricity" element={<Electricity />} />
+          <Route path="/airtime" element={<Airtime />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
