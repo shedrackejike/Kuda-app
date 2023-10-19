@@ -9,6 +9,7 @@ import Investment from "./Pages/Investment";
 import Kudacard from "./Pages/Kudacard";
 import Electricity from "./Pages/Electricity";
 import Airtime from "./Pages/Airtime";
+import Internetap from "./Pages/Internetap";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="/kuda" element={<Kudacard />} />
           <Route path="/electricity" element={<Electricity />} />
           <Route path="/airtime" element={<Airtime />} />
+          <Route path="/internet" element={<Internetap />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

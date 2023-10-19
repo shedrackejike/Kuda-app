@@ -250,7 +250,9 @@ const Person = () => {
                 <FaWifi />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Internet
+                <Link as={RouterLink} to={"/internet"}>
+                  Internet
+                </Link>
               </Text>
             </Flex>
           </Box>
