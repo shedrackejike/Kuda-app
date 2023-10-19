@@ -3,6 +3,7 @@ import React from "react";
 import Airtimeap from "../Subpages/Airtime/Airtimeap";
 import Network from "../Subpages/Airtime/Network";
 import Find from "../Subpages/Airtime/Find";
+import Trans from "../Subpages/Airtime/Trans";
 
 const Airtime = () => {
   return (
@@ -10,6 +11,7 @@ const Airtime = () => {
       <Airtimeap />
       <Network />
       <Find />
+      <Trans />
     </Box>
   );
 };
