@@ -3,6 +3,7 @@ import React from "react";
 import Behind from "../Subpages/Internet/Behind";
 import Network from "../Subpages/Airtime/Network";
 import Provider from "../Subpages/Internet/Provider";
+import Plans from "../Subpages/Internet/Plans";
 
 const Internetap = () => {
   return (
@@ -10,6 +11,7 @@ const Internetap = () => {
       <Behind />
       <Network />
       <Provider />
+      <Plans />
     </Box>
   );
 };
