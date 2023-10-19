@@ -5,6 +5,6 @@ export const famiData = [
     Comment:
       "Recharge any Nigerian phone number from your Kuda app even when you’re abroad.",
     button: "Learn How To Buy Airtime  > ",
-    Image: "images/fami.png",
+    Image: "images/provider.png",
   },
 ];
