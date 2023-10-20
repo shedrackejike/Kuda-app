@@ -1,10 +1,10 @@
 export const withoutData = [
   {
     id: "1",
-    head: "Pay on foreign stores without a dollar card.",
+    head: "Find all major TV service providers.",
     Comment:
-      "Shop abroad with gift cards for popular online stores like Amazon, Walmart and Best Buy on the Kuda app.",
+      "DStv, Showmax, GOtv and StarTimes are all easy-to-find options for you on the Kuda app.",
     button: "Join Kuda >",
-    Image: "images/without.png",
+    Image: "images/max.png",
   },
 ];

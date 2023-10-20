@@ -3,6 +3,7 @@ import React from "react";
 import Paytv from "../Subpages/Tv/Paytv";
 import Network from "../Subpages/Airtime/Network";
 import Without from "../Subpages/Tv/Without";
+import Unlock from "../Subpages/Tv/Unlock";
 
 const Tv = () => {
   return (
@@ -10,6 +11,7 @@ const Tv = () => {
       <Paytv />
       <Network />
       <Without />
+      <Unlock />
     </Box>
   );
 };
