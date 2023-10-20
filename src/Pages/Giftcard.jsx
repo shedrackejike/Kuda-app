@@ -5,6 +5,8 @@ import Network from "../Subpages/Airtime/Network";
 import Dollar from "../Subpages/Giftcard/Dollar";
 import Game from "../Subpages/Giftcard/Game";
 import Treat from "../Subpages/Giftcard/Treat";
+import Giftfqs from "../Subpages/Giftcard/Giftfqs";
+import Money from "../Subpages/Home/Money";
 
 const Giftcard = () => {
   return (
@@ -14,6 +16,8 @@ const Giftcard = () => {
       <Dollar />
       <Game />
       <Treat />
+      <Giftfqs />
+      <Money />
     </Box>
   );
 };
