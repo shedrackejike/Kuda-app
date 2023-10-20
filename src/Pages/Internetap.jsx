@@ -5,6 +5,7 @@ import Network from "../Subpages/Airtime/Network";
 import Provider from "../Subpages/Internet/Provider";
 import Plans from "../Subpages/Internet/Plans";
 import Mode from "../Subpages/Internet/Mode";
+import Confirm from "../Subpages/Internet/Confirm";
 
 const Internetap = () => {
   return (
@@ -14,6 +15,7 @@ const Internetap = () => {
       <Provider />
       <Plans />
       <Mode />
+      <Confirm />
     </Box>
   );
 };
