@@ -6,6 +6,8 @@ import Provider from "../Subpages/Internet/Provider";
 import Plans from "../Subpages/Internet/Plans";
 import Mode from "../Subpages/Internet/Mode";
 import Confirm from "../Subpages/Internet/Confirm";
+import Datafqs from "../Subpages/Internet/Datafqs";
+import Money from "../Subpages/Home/Money";
 
 const Internetap = () => {
   return (
@@ -16,6 +18,8 @@ const Internetap = () => {
       <Plans />
       <Mode />
       <Confirm />
+      <Datafqs />
+      <Money />
     </Box>
   );
 };
