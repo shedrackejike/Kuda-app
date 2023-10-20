@@ -271,7 +271,9 @@ const Person = () => {
                 <BsBagFill />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Gift Cards
+                <Link as={RouterLink} to={"/giftcard"}>
+                  Gift Cards
+                </Link>
               </Text>
             </Flex>
           </Box>
