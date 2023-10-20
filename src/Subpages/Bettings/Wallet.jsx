@@ -1,40 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { Box, Text, Flex, Link } from "@chakra-ui/react";
-import { popularData } from "../../utils/popular";
+import { walletData } from "../../utils/wallet";
 
-const Popular = () => {
-  const [popular, setPopular] = useState([]);
+const Wallet = () => {
+  const [wallet, setWallet] = useState([]);
 
   useEffect(() => {
-    setPopular(popularData);
+    setWallet(walletData);
   }, []);
   return (
     <Box>
       <Box>
         <Box minH={"550px"} w={"90%"} margin={"auto"}>
-          {popular?.map((data) => (
+          {wallet?.map((data) => (
             <Flex
               minH={"500px"}
               w={"98%"}
-              justifyContent={"space-between"}
+              justifyContent={"space-around"}
               alignItems={"center"}
             >
-              <Box
-                minH={"390px"}
-                w={"45%"}
-                justify={"center"}
-                alignItems={"center"}
-                backgroundImage={data.Image}
-                backgroundRepeat={"no-repeat"}
-                backgroundPosition={"center"}
-                backgroundSize={"contain"}
-                display={"flex"}
-              ></Box>
-
               <Box minH={"200px"} w={"40%"}>
                 <Box minH={"80px"} w={"390px"}>
                   <Text
-                    fontSize={"30px"}
+                    fontSize={"24px"}
                     fontWeight={"extrabold"}
                     textColor={"#40196D"}
                   >
@@ -47,7 +35,7 @@ const Popular = () => {
                 </Box>
                 <Box
                   minH={"40px"}
-                  w={"120px"}
+                  w={"240px"}
                   alignItems={"center"}
                   justifyContent={"center"}
                 >
@@ -62,6 +50,18 @@ const Popular = () => {
                   </Link>
                 </Box>
               </Box>
+
+              <Box
+                minH={"390px"}
+                w={"45%"}
+                justify={"center"}
+                alignItems={"center"}
+                backgroundImage={data.Image}
+                backgroundRepeat={"no-repeat"}
+                backgroundPosition={"center"}
+                backgroundSize={"contain"}
+                display={"flex"}
+              ></Box>
             </Flex>
           ))}
         </Box>
@@ -70,4 +70,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default Wallet;
