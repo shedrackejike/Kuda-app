@@ -3,6 +3,7 @@ import React from "react";
 import Gift from "../Subpages/Giftcard/Gift";
 import Network from "../Subpages/Airtime/Network";
 import Dollar from "../Subpages/Giftcard/Dollar";
+import Game from "../Subpages/Giftcard/Game";
 
 const Giftcard = () => {
   return (
@@ -10,6 +11,7 @@ const Giftcard = () => {
       <Gift />
       <Network />
       <Dollar />
+      <Game />
     </Box>
   );
 };
