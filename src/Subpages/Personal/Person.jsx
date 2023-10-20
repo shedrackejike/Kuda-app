@@ -355,7 +355,9 @@ const Person = () => {
                 <BiSolidCar />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Transport
+                <Link as={RouterLink} to={"/transport"}>
+                  Transport
+                </Link>
               </Text>
             </Flex>
           </Box>
