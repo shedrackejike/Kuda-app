@@ -3,6 +3,7 @@ import React from "react";
 import Leave from "../Subpages/Cardlessap/Leave";
 import Atms from "../Subpages/Transfer/Atms";
 import Pos from "../Subpages/Cardlessap/Pos";
+import Online from "../Subpages/Cardlessap/Online";
 
 const Cardless = () => {
   return (
@@ -10,6 +11,7 @@ const Cardless = () => {
       <Leave />
       <Atms />
       <Pos />
+      <Online />
     </Box>
   );
 };
