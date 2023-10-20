@@ -313,7 +313,9 @@ const Person = () => {
                 <PiTelevisionSimpleFill />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                TV
+                <Link as={RouterLink} to={"/tv"}>
+                  TV
+                </Link>
               </Text>
             </Flex>
           </Box>
