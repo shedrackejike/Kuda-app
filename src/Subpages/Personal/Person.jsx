@@ -334,7 +334,9 @@ const Person = () => {
                 <PiGlobeThin />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Betting
+                <Link as={RouterLink} to={"/betting"}>
+                  Betting
+                </Link>
               </Text>
             </Flex>
           </Box>

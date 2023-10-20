@@ -4,6 +4,9 @@ import Paytv from "../Subpages/Tv/Paytv";
 import Network from "../Subpages/Airtime/Network";
 import Without from "../Subpages/Tv/Without";
 import Unlock from "../Subpages/Tv/Unlock";
+import Pack from "../Subpages/Tv/Pack";
+import Tvfqs from "../Subpages/Tv/Tvfqs";
+import Money from "../Subpages/Home/Money";
 
 const Tv = () => {
   return (
@@ -12,6 +15,9 @@ const Tv = () => {
       <Network />
       <Without />
       <Unlock />
+      <Pack />
+      <Tvfqs />
+      <Money />
     </Box>
   );
 };
