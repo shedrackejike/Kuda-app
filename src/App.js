@@ -11,6 +11,7 @@ import Electricity from "./Pages/Electricity";
 import Airtime from "./Pages/Airtime";
 import Internetap from "./Pages/Internetap";
 import Giftcard from "./Pages/Giftcard";
+import Cardless from "./Pages/Cardless";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
           <Route path="/airtime" element={<Airtime />} />
           <Route path="/internet" element={<Internetap />} />
           <Route path="/giftcard" element={<Giftcard />} />
+          <Route path="/cardless" element={<Cardless />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

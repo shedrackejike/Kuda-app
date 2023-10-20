@@ -292,7 +292,9 @@ const Person = () => {
                 <PiContactlessPaymentFill />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Cardless Payments
+                <Link as={RouterLink} to={"/cardless"}>
+                  Cardless Payments
+                </Link>
               </Text>
             </Flex>
           </Box>
