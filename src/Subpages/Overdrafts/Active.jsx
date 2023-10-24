@@ -22,7 +22,7 @@ const Active = () => {
               <Box minH={"200px"} w={"40%"}>
                 <Box minH={"80px"} w={"390px"}>
                   <Text
-                    fontSize={"40px"}
+                    fontSize={"39px"}
                     fontWeight={"bold"}
                     textColor={"#40196D"}
                   >
@@ -71,7 +71,7 @@ const Active = () => {
               </Box>
 
               <Box
-                minH={"470px"}
+                minH={"400px"}
                 w={"40%"}
                 justify={"center"}
                 alignItems={"center"}
