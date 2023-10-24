@@ -382,7 +382,9 @@ const Person = () => {
                 <VscIssueDraft />
               </Box>
               <Text marginLeft={"3"} textColor={"black"} fontSize={"12"}>
-                Overdrafts
+                <Link as={RouterLink} to={"/overdrafts"}>
+                  Overdrafts
+                </Link>
               </Text>
             </Flex>
           </Box>

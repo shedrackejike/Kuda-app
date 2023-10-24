@@ -15,6 +15,7 @@ import Cardless from "./Pages/Cardless";
 import Tv from "./Pages/Tv";
 import Betting from "./Pages/Betting";
 import Transport from "./Pages/Transport";
+import Overdrafts from "./Pages/Overdrafts";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
           <Route path="/tV" element={<Tv />} />
           <Route path="/betting" element={<Betting />} />
           <Route path="/transport" element={<Transport />} />
+          <Route path="/overdrafts" element={<Overdrafts />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
