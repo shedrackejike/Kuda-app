@@ -14,6 +14,7 @@ import Giftcard from "./Pages/Giftcard";
 import Cardless from "./Pages/Cardless";
 import Tv from "./Pages/Tv";
 import Betting from "./Pages/Betting";
+import Transport from "./Pages/Transport";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           <Route path="/cardless" element={<Cardless />} />
           <Route path="/tV" element={<Tv />} />
           <Route path="/betting" element={<Betting />} />
+          <Route path="/transport" element={<Transport />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
