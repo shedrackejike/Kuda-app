@@ -4,6 +4,7 @@ import Discoverb from "../Subpages/DiscoverB/Discoverb";
 import Trusted from "../Subpages/DiscoverB/Trusted";
 import Create from "../Subpages/DiscoverB/Create";
 import Welcome from "../Subpages/DiscoverB/Welcome";
+import Paid from "../Subpages/DiscoverB/Paid";
 
 const Discover = () => {
   return (
@@ -12,6 +13,7 @@ const Discover = () => {
       <Trusted />
       <Create />
       <Welcome />
+      <Paid />
     </Box>
   );
 };

@@ -1,10 +1,10 @@
 export const paidData = [
   {
     id: "1",
-    head: "Open a Kuda Business account without paperwork.",
-    Comment: "Wherever you are, you can set up your account quickly.",
-    button: "Open a Kuda Business Account >",
+    head: "Get paid quicker. ",
+    Comment: "Send estimates and invoices with multiple payment options.",
+    button: "Try invoicing now   >",
     Image:
-      "https://kuda.com/static/Paperwork-illustration-d1d381761183aef9bed3e028580d83ae.svg",
+      "https://kuda.com/static/Invoicing-illustration-720d0684c2b383e784764e788fe0347b.svg",
   },
 ];
