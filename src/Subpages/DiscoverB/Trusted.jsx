@@ -11,7 +11,7 @@ const Trusted = () => {
   }, []);
   return (
     <Box
-      minH={"100px"}
+      minH={"200px"}
       w={"100%"}
       alignItems={"center"}
       justifyContent={"center"}
