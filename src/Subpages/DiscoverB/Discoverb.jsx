@@ -16,7 +16,7 @@ const Discoverb = () => {
             <Flex
               minH={"500px"}
               w={"98%"}
-              justifyContent={"space-evenly"}
+              justifyContent={"space-between"}
               alignItems={"center"}
             >
               <Box minH={"200px"} w={"40%"}>
