@@ -5,6 +5,8 @@ import Trusted from "../Subpages/DiscoverB/Trusted";
 import Create from "../Subpages/DiscoverB/Create";
 import Welcome from "../Subpages/DiscoverB/Welcome";
 import Paid from "../Subpages/DiscoverB/Paid";
+import Grow from "../Subpages/DiscoverB/Grow";
+import Place from "../Subpages/DiscoverB/Place";
 
 const Discover = () => {
   return (
@@ -14,6 +16,8 @@ const Discover = () => {
       <Create />
       <Welcome />
       <Paid />
+      <Grow />
+      <Place />
     </Box>
   );
 };
