@@ -16,6 +16,7 @@ import Tv from "./Pages/Tv";
 import Betting from "./Pages/Betting";
 import Transport from "./Pages/Transport";
 import Overdrafts from "./Pages/Overdrafts";
+import Discover from "./Pages/Discover";
 // import Footer from "./Components/Footer";
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           <Route path="/betting" element={<Betting />} />
           <Route path="/transport" element={<Transport />} />
           <Route path="/overdrafts" element={<Overdrafts />} />
+          <Route path="/discover" element={<Discover />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
