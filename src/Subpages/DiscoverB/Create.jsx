@@ -49,7 +49,7 @@ const Create = () => {
               </Box>
 
               <Box minH={"60%"} w={"90%"} margin={"auto"}>
-                <Text textColor={"#57357F"} fontSize={"13"} fontWeight={"bold"}>
+                <Text textColor={"black"} fontSize={"13"} fontWeight={"bold"}>
                   {data.Comment}
                 </Text>
               </Box>
