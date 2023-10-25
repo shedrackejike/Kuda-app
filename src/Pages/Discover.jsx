@@ -7,6 +7,7 @@ import Welcome from "../Subpages/DiscoverB/Welcome";
 import Paid from "../Subpages/DiscoverB/Paid";
 import Grow from "../Subpages/DiscoverB/Grow";
 import Place from "../Subpages/DiscoverB/Place";
+import Manage from "../Subpages/DiscoverB/Manage";
 
 const Discover = () => {
   return (
@@ -18,6 +19,7 @@ const Discover = () => {
       <Paid />
       <Grow />
       <Place />
+      <Manage />
     </Box>
   );
 };
