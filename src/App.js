@@ -17,7 +17,7 @@ import Betting from "./Pages/Betting";
 import Transport from "./Pages/Transport";
 import Overdrafts from "./Pages/Overdrafts";
 import Discover from "./Pages/Discover";
-// import Footer from "./Components/Footer";
+import Footer from "./Components/Footer";
 
 function App() {
   useEffect(() => {
@@ -64,7 +64,7 @@ function App() {
           <Route path="/overdrafts" element={<Overdrafts />} />
           <Route path="/discover" element={<Discover />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </ChakraProvider>
   );
