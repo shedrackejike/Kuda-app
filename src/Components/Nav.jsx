@@ -8,7 +8,14 @@ import Help from "../Subpages/Help/Help";
 
 const Nav = () => {
   return (
-    <Flex h="65px" w={"100%"} bg={"red"}>
+    <Flex
+      minH="65px"
+      w={"100%"}
+      bg={"white"}
+      position={"fixed"}
+      zIndex={"5"}
+      top="0"
+    >
       <Flex
         w={"97%"}
         h={"100%"}

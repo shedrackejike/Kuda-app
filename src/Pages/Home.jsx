@@ -14,10 +14,15 @@ import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
-    <Box h={"100vh"} w={"100%"}>
+    <Box minH={"100vh"} w={"100%"} mt={"80px"}>
       <Flex w={"90%"} margin={"auto"} h={"80%"}>
-        <Flex justifyContent={"space-around"} w={"100%"} alignItems={"center"}>
-          <Box h={"80%"} w={"35%"}>
+        <Flex
+          justifyContent={"space-around"}
+          minH={"550px"}
+          w={"100%"}
+          alignItems={"center"}
+        >
+          <Box minH={"440px"} w={"35%"}>
             <Box h={"30%"} w={"50"} mt={"5"}>
               <Text
                 fontSize={"43px"}
@@ -86,15 +91,22 @@ const Home = () => {
         </Flex>
       </Flex>
 
-      <Box w={"90%"} margin={"auto"} h={"90%"}>
+      <Box w={"90%"} margin={"auto"} minH={"450px"}>
         <Flex
           w={"90%"}
           margin={"auto"}
-          h={"50%"}
+          minH={"200px"}
           justifyContent={"space-evenly"}
           alignItems={"center"}
         >
-          <Box h={"50%"} w={"30%"} boxShadow="md" p="6" rounded="md" bg="white">
+          <Box
+            minH={"120"}
+            w={"30%"}
+            boxShadow="md"
+            p="6"
+            rounded="md"
+            bg="white"
+          >
             <Box
               h={"7"}
               w={"10%"}
@@ -117,7 +129,14 @@ const Home = () => {
             </Box>
           </Box>
 
-          <Box h={"50%"} w={"30%"} boxShadow="md" p="6" rounded="md" bg="white">
+          <Box
+            minH={"120"}
+            w={"30%"}
+            boxShadow="md"
+            p="6"
+            rounded="md"
+            bg="white"
+          >
             <Box
               h={"7"}
               w={"10%"}
@@ -139,7 +158,14 @@ const Home = () => {
             </Box>
           </Box>
 
-          <Box h={"50%"} w={"30%"} boxShadow="md" p="6" rounded="md" bg="white">
+          <Box
+            minH={"120"}
+            w={"30%"}
+            boxShadow="md"
+            p="6"
+            rounded="md"
+            bg="white"
+          >
             <Box
               h={"7"}
               w={"10%"}
@@ -165,10 +191,17 @@ const Home = () => {
         <Flex
           w={"80%"}
           margin={"auto"}
-          h={"40%"}
+          minH={"100px"}
           justifyContent={"space-evenly"}
         >
-          <Box h={"70%"} w={"35%"} boxShadow="md" p="6" rounded="md" bg="white">
+          <Box
+            minH={"120"}
+            w={"35%"}
+            boxShadow="md"
+            p="6"
+            rounded="md"
+            bg="white"
+          >
             <Box
               h={"7"}
               w={"10%"}
@@ -190,7 +223,14 @@ const Home = () => {
             </Box>
           </Box>
 
-          <Box h={"70%"} w={"35%"} boxShadow="md" p="6" rounded="md" bg="white">
+          <Box
+            minH={"120"}
+            w={"35%"}
+            boxShadow="md"
+            p="6"
+            rounded="md"
+            bg="white"
+          >
             <Box
               h={"7"}
               w={"10%"}
@@ -205,7 +245,7 @@ const Home = () => {
               <HiShieldExclamation />
             </Box>
 
-            <Box h={"70%"} w={"90%"} margin={"auto"}>
+            <Box h={"50%"} w={"90%"} margin={"auto"}>
               <Text textColor={"#57357F"} fontSize={"13"} fontWeight={"bold"}>
                 Save money automatically any time you spend.
               </Text>
@@ -214,8 +254,8 @@ const Home = () => {
         </Flex>
       </Box>
 
-      <Box w={"90%"} margin={"auto"} h={"90%"}>
-        <Flex w={"90%"} margin={"auto"} h={"90%"}>
+      <Box w={"90%"} margin={"auto"} minH={"550px"}>
+        <Flex w={"90%"} margin={"auto"} minH={"440px"}>
           <Box w={"90%"} margin={"auto"} h={"90%"}>
             <Box w={"50%"} h={"60%"}>
               <Text fontSize={"42px"} fontWeight={"bold"} textColor={"#57357F"}>
@@ -258,10 +298,10 @@ const Home = () => {
         </Flex>
       </Box>
 
-      <Box w={"90%"} margin={"auto"} h={"80%"}>
+      <Box w={"90%"} margin={"auto"} minH={"550px"}>
         <Flex
           w={"90%"}
-          h={"90%"}
+          minH={"440px"}
           justifyContent={"space-evenly"}
           alignItems={"center"}
         >
@@ -300,9 +340,9 @@ const Home = () => {
         </Flex>
       </Box>
 
-      <Box w={"90%"} margin={"auto"} h={"80%"}>
+      <Box w={"90%"} margin={"auto"} minH={"550px"}>
         <Flex
-          h={"95%"}
+          minH={"440px"}
           w={"95%"}
           margin={"auto"}
           alignItems={"center"}
@@ -347,9 +387,9 @@ const Home = () => {
         </Flex>
       </Box>
 
-      <Box w={"90%"} margin={"auto"} h={"80%"}>
+      <Box w={"90%"} margin={"auto"} minH={"550px"}>
         <Flex
-          h={"95%"}
+          minH={"440px"}
           w={"95%"}
           margin={"auto"}
           alignItems={"center"}
@@ -394,9 +434,9 @@ const Home = () => {
         </Flex>
       </Box>
 
-      <Box w={"90%"} margin={"auto"} h={"80%"}>
+      <Box w={"90%"} margin={"auto"} minH={"550px"}>
         <Flex
-          h={"95%"}
+          minH={"440px"}
           w={"95%"}
           margin={"auto"}
           alignItems={"center"}
@@ -442,9 +482,9 @@ const Home = () => {
         </Flex>
       </Box>
 
-      <Box w={"90%"} margin={"auto"} h={"80%"}>
+      <Box w={"90%"} margin={"auto"} minH={"550px"}>
         <Flex
-          h={"95%"}
+          minH={"440px"}
           w={"95%"}
           margin={"auto"}
           alignItems={"center"}
