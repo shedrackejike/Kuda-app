@@ -9,27 +9,57 @@ const Buying = () => {
   return (
     <Box>
       <Box>
-        <Box minH={"550px"} w={"90%"} margin={"auto"}>
+        <Box
+          //  minH={"550px"} w={"90%"}
+          margin={"auto"}
+          w={{ base: "100%", lg: "86%", xl: "90%" }}
+          mt={"90px"}
+          minH={{ base: "350px", xl: "550px" }}
+        >
           {buying?.map((data) => (
             <Flex
-              minH={"500px"}
-              w={"100%"}
-              justifyContent={"space-evenly"}
+              // minH={"500px"}
+              // w={"100%"}
+              // justifyContent={"space-evenly"}
+              // alignItems={"center"}
+              minH={{ base: "300px", xl: "550px" }}
               alignItems={"center"}
+              justifyContent={{ xl: "space-between" }}
+              w={{ base: "100%", lg: "50%", xl: "100%" }}
+              flexDirection={{ base: "column", md: "row" }}
             >
-              <Box minH={"250px"} w={"40%"}>
+              <Box
+                // minH={"250px"} w={"40%"}
+                minH={{ base: "300px", lg: "50%", xl: "400px" }}
+                w={{ base: "90%", lg: "50%", xl: "90%" }}
+                alignItems={"center"}
+                justifyContent={"center"}
+                display={"flex"}
+                flexDirection={"column"}
+              >
                 <Box minH={"80px"} w={"330px"}>
                   <Text
-                    fontSize={"25px"}
+                    // fontSize={"25px"}
                     fontWeight={"extrabold"}
                     textColor={"#40196D"}
+                    fontSize={{ base: "26px", lg: "50%", xl: "40px" }}
+                    // fontWeight={"bold"}
+                    // textColor={"#57357F"}
+                    textAlign={{ base: "center", lg: "0", xl: "0" }}
                   >
                     {data.head}
                   </Text>
                 </Box>
 
-                <Box minH={"80px"} w={"400px"} mt={"3"}>
-                  <Text>{data.Comment}</Text>
+                <Box
+                  minH={"80px"}
+                  // w={"400px"}
+                  mt={"3"}
+                  w={{ base: "80%", lg: "50%", xl: "400px" }}
+                >
+                  <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+                    {data.Comment}
+                  </Text>
                 </Box>
 
                 <Box
@@ -52,8 +82,8 @@ const Buying = () => {
               </Box>
 
               <Box
-                minH={"470px"}
-                w={"50%"}
+                minH={{ base: "300px", lg: "50%", xl: "400px" }}
+                w={{ base: "100%", lg: "50%", xl: "60%" }}
                 justify={"center"}
                 alignItems={"center"}
                 backgroundImage={data.Image}

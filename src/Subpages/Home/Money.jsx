@@ -9,38 +9,55 @@ const Money = () => {
     setMoney(moneyData);
   }, []);
   return (
-    <Box minH={"550px"} w={"100"} borderBottom={"1px"}>
+    <Box
+      minH={{ base: "500px", lg: "40px", xl: "550px" }}
+      w={{ base: "100%", lg: "86%", xl: "100%" }}
+      borderBottom={"1px"}
+    >
       <Box
-        minH={"340px"}
-        w={"80%"}
         margin={"auto"}
-        alignItems={"center"}
-        justifyContent={"center"}
         display={"flex"}
         boxShadow="2xl"
         p="1"
         rounded="md"
         bg={"#EFF1FF"}
+        minH={{ base: "300px", lg: "40px", xl: "440px" }}
+        w={{ base: "90%", lg: "50%", xl: "80%" }}
       >
         {money?.map((item) => (
           <Flex
-            h={"80%"}
-            w={"85%"}
             alignItems={"center"}
-            justifyContent={"space-between"}
+            minH={{ base: "200px", lg: "40px", xl: "440px" }}
+            justifyContent={{ base: "center", md: "space-between" }}
+            w={{ base: "100%", lg: "50%", xl: "100%" }}
+            flexDirection={{ base: "column", md: "row" }}
           >
-            <Box minH={"60%"} w={"45%"}>
+            <Box
+              display={{ base: "flex", md: "block" }}
+              flexDir={{ base: "column" }}
+              alignItems={{ base: "center", xl: "center" }}
+              justifyContent={{ base: "center", xl: "center" }}
+              minH={{ base: "400px", lg: "50%", xl: "240px" }}
+              w={{ base: "95%", md: "40%" }}
+            >
               <Box w={"80%"} minH={"50px"}>
                 <Text
-                  fontSize={"33px"}
+                  fontSize={{ base: "40px", md: "30px" }}
                   fontWeight={"bold"}
                   textColor={"#57357F"}
+                  textAlign={{ base: "center", md: "left" }}
                 >
                   {item.app}
                 </Text>
               </Box>
-              <Box w={"90%"} minH={"50px"} mt={"3"}>
-                <Text>{item.save}</Text>
+              <Box
+                minH={"25%"}
+                mt={"6px"}
+                w={{ base: "80%", lg: "50%", xl: "90%" }}
+              >
+                <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+                  {item.save}
+                </Text>
               </Box>
               <Box
                 mt={"5"}
@@ -56,11 +73,17 @@ const Money = () => {
                 justifyContent={"center"}
                 alignItems={"center"}
               >
-                <Text textColor={"white"}>{item.button}</Text>
+                <Text
+                  textColor={"white"}
+                  textAlign={{ base: "center", lg: "0", xl: "0" }}
+                >
+                  {item.button}
+                </Text>
               </Box>
             </Box>
 
             <Box
+              display={{ base: "none", lg: "flex", xl: "flex" }}
               minH={"400px"}
               w={"45%"}
               justify={"center"}
@@ -69,9 +92,8 @@ const Money = () => {
               backgroundRepeat={"no-repeat"}
               backgroundPosition={"center"}
               backgroundSize={"cover"}
-              display={"flex"}
               margin={"auto"}
-            ></Box>
+            />
           </Flex>
         ))}
       </Box>

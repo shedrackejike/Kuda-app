@@ -7,7 +7,7 @@ const Paypal = () => {
   useEffect(() => seetPaypal(paypalData), []);
   return (
     <Box>
-      <Box>
+      <Box bg={"red"}>
         <Box minH={"550px"} w={"90%"} margin={"auto"}>
           {paypal?.map((data) => (
             <Flex
