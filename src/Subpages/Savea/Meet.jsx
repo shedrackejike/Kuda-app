@@ -9,6 +9,7 @@ const Meet = () => {
   return (
     <Box
       margin={"auto"}
+      // bg={"red"}
       minH={{ base: "750px", lg: "40px", xl: "550px" }}
       w={{ base: "100%", lg: "86%", xl: "90%" }}
     >

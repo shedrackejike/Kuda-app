@@ -11,6 +11,7 @@ const More = () => {
       margin={"auto"}
       w={{ base: "100%", lg: "86%", xl: "90%" }}
       mt={"90px"}
+      // bg={"red"}
       minH={{ base: "350px", xl: "550px" }}
     >
       {save?.map((data) => (
@@ -27,22 +28,20 @@ const More = () => {
         >
           <Box
             //   minH={"250px"} w={"40%"}
+            // bg={"red"}
             minH={{ base: "300px", lg: "50%", xl: "400px" }}
             w={{ base: "90%", lg: "50%", xl: "90%" }}
-            alignItems={"center"}
-            justifyContent={"center"}
+            // alignItems={"center"}
+            justifyContent={{ base: "left", md: "center" }}
             display={"flex"}
             flexDirection={"column"}
           >
             <Box minH={"80px"} w={"390px"}>
               <Text
-                // fontSize={"45px"}
-                // fontWeight={"bold"}
-                // textColor={"#40196D"}
                 fontSize={{ base: "46px", lg: "50%", xl: "40px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
+                textAlign={{ base: "center", md: "left" }}
               >
                 {data.head}
               </Text>
@@ -54,7 +53,7 @@ const More = () => {
               mt={"3"}
               w={{ base: "80%", lg: "50%", xl: "400px" }}
             >
-              <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+              <Text textAlign={{ base: "center", md: "left" }}>
                 {data.Comment}
               </Text>
             </Box>
@@ -63,6 +62,7 @@ const More = () => {
               minH={"40px"}
               w={"120px"}
               mt={"3"}
+              m={{ base: "auto", md: "0" }}
               alignItems={"center"}
               justifyContent={"center"}
               display={"flex"}

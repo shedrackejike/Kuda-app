@@ -20,7 +20,6 @@ import { GrClose } from "react-icons/gr";
 import { useState } from "react";
 
 const Nav = () => {
-  // const { colorMode } = useColorMode();
   const [display, changeDisplay] = useState("none");
   return (
     <Flex
@@ -32,8 +31,7 @@ const Nav = () => {
       top="0"
     >
       <Flex
-        // w={"97%"}
-        // bg={"green"}
+        bg={"green"}
         h={"100%"}
         m={"auto"}
         display={"flex"}
@@ -149,6 +147,51 @@ const Nav = () => {
             </Box>
           </Flex>
         </Flex>
+        <Flex h={"12"} w={"65%"} justify={"space-around"} align={"center"}>
+          <Box
+            textColor={"#57357F"}
+            w={"26%"}
+            textAlign={"center"}
+            fontSize={"12"}
+            cursor={"pointer"}
+          >
+            <Link as={RouterLink} to="/signin">
+              Sign In
+            </Link>
+          </Box>
+          <Box
+            h={"10"}
+            bg={"#40196D"}
+            w={"50%"}
+            textAlign={"center"}
+            textColor={"white"}
+            fontSize={"14"}
+            fontWeight={"bold"}
+            borderRadius={"9"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            cursor={"pointer"}
+          >
+            <Link as={RouterLink} to="/join">
+              join Kuda
+            </Link>
+          </Box>
+
+          <Box
+            h={"8"}
+            w={"9"}
+            borderRadius="full"
+            justify={"center"}
+            alignItems={"center"}
+            backgroundImage="/images/niger.jpeg"
+            backgroundRepeat={"no-repeat"}
+            backgroundPosition={"center"}
+            backgroundSize={"cover"}
+            display={"flex"}
+            margin={"auto"}
+          ></Box>
+        </Flex>
         <Flex
           align="center"
           justify="space-between"
@@ -184,6 +227,7 @@ const Nav = () => {
             onClick={() => changeDisplay("none")}
           />
         </Flex>
+
         <Flex h={"12"} w={"65%"} justify={"space-around"} align={"center"}>
           <Box
             textColor={"#57357F"}
@@ -225,6 +269,7 @@ const Nav = () => {
             margin={"auto"}
           ></Box>
         </Flex>
+
         <Flex
           direction={"column"}
           // bgColor="black"

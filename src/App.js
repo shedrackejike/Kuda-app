@@ -18,6 +18,9 @@ import Transport from "./Pages/Transport";
 import Overdrafts from "./Pages/Overdrafts";
 import Discover from "./Pages/Discover";
 import Footer from "./Components/Footer";
+import Login from "./Pages/auth/Login";
+import Register from "./Pages/auth/Register";
+import Dashboard from "./Pages/Dashboard/Pages/Dashboard";
 
 function App() {
   useEffect(() => {
@@ -63,6 +66,9 @@ function App() {
           <Route path="/transport" element={<Transport />} />
           <Route path="/overdrafts" element={<Overdrafts />} />
           <Route path="/discover" element={<Discover />} />
+          <Route path="/signin" element={<Login />} />
+          <Route path="/join" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
         <Footer />
       </BrowserRouter>
