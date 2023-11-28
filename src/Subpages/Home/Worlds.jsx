@@ -10,34 +10,23 @@ const Worlds = () => {
   }, []);
   return (
     <Flex
-      border={"1px"}
-      bg={"red"}
       margin={"auto"}
-      minH={{ base: "280px", lg: "40px", xl: "550px" }}
-      w={{ base: "100%", lg: "86%", xl: "90%" }}
+      minH={{ base: "200px", md: "190px" }}
+      w={{ base: "100%", md: "90%" }}
+      flexWrap={{ base: "wrap", md: "wrap" }}
+      justify={"space-between"}
+      justifyContent={"space-around"}
     >
       {words?.map((data) => (
-        <Flex
-          alignItems={"center"}
-          minH={{ base: "420px", lg: "40px", xl: "440px" }}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
-          flexWrap={{ base: "wrap", lg: "wrap", xl: "wrap-reverse" }}
-        >
-          <Box
-            minH={{ base: "40px", lg: "40px", xl: "40px" }}
-            w={{ base: "100px", lg: "70px", xl: "100px" }}
-          >
-            <Image
-              objectFit="inherit"
-              src={data.image}
-              alt="logo"
-              width={"fit-content"}
-              boxSize="100%"
-            />
-          </Box>
-        </Flex>
+        <Box h={{ base: "50px", md: "50px" }} w={{ base: "28%", md: "100px" }}>
+          <Image
+            objectFit="inherit"
+            src={data.image}
+            alt="logo"
+            width={"fit-content"}
+            boxSize="100%"
+          />
+        </Box>
       ))}
     </Flex>
   );

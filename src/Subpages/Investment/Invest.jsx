@@ -10,23 +10,24 @@ const Invest = () => {
     <Box>
       <Box mt={"90px"}>
         <Box
-          // bg={"red"}
+          bg={""}
           margin={"auto"}
-          minH={{ base: "750px", lg: "40px", xl: "550px" }}
-          w={{ base: "100%", lg: "86%", xl: "90%" }}
+          minH={{ base: "750px", md: "550px" }}
+          w={{ base: "100%", md: "90%" }}
         >
           {invest?.map((data) => (
             <Flex
               alignItems={"center"}
-              minH={{ base: "420px", lg: "40px", xl: "500px" }}
-              justifyContent={{ xl: "space-between" }}
-              w={{ base: "90%", lg: "50%", xl: "100%" }}
-              flexDirection={{ base: "column", lg: "row", xl: "row" }}
+              bg={""}
+              minH={{ base: "420px", md: "500px" }}
+              justifyContent={{ md: "space-between" }}
+              w={{ base: "100%", md: "100%" }}
+              flexDirection={{ base: "column", md: "row" }}
             >
               <Box
                 // bg={"blue"}
-                minH={{ base: "300px", lg: "50%", xl: "400px" }}
-                w={{ base: "90%", lg: "50%", xl: "70%" }}
+                minH={{ base: "300px", md: "400px" }}
+                w={{ base: "90%", md: "70%" }}
                 // alignItems={"center"}
                 justifyContent={{ base: "left", md: "center" }}
                 display={"flex"}
@@ -34,12 +35,12 @@ const Invest = () => {
               >
                 <Box
                   minH={"80px"}
-                  w={"350px"}
+                  w={{ base: "360px", md: "320px" }}
                   // bg={"red"}
                   margin={{ base: "auto" }}
                 >
                   <Text
-                    fontSize={{ base: "46px", lg: "50%", xl: "40px" }}
+                    fontSize={{ base: "40px", md: "40px" }}
                     fontWeight={"bold"}
                     textColor={"#57357F"}
                     textAlign={{ base: "center", md: "left" }}
@@ -52,7 +53,7 @@ const Invest = () => {
                   margin={"auto"}
                   minH={"80px"}
                   mt={"3"}
-                  w={{ base: "80%", md: "400px" }}
+                  w={{ base: "100%", md: "400px" }}
                   // bg={"red"}
                 >
                   <Text textAlign={{ base: "center", md: "center" }}>
@@ -93,7 +94,12 @@ const Invest = () => {
                     />
                   </Link>
                 </Flex>
-                <Flex minH={"10px"} w={"300px"} mt={"3"} margin={"auto"}>
+                <Flex
+                  minH={"10px"}
+                  w={{ base: "250px", md: "300px" }}
+                  mt={"3"}
+                  margin={"auto"}
+                >
                   <Text
                     margin={"auto"}
                     fontSize={"12"}
@@ -126,16 +132,14 @@ const Invest = () => {
               <Box
                 minH={{ base: "390px", md: "400px" }}
                 w={{ base: "100%", md: "60%" }}
-                m={{ base: "auto", md: "0" }}
                 justify={"center"}
-                // margin={{ base: "auto" }}
                 alignItems={"center"}
                 backgroundImage={data.Image}
                 backgroundRepeat={"no-repeat"}
                 backgroundPosition={"center"}
                 backgroundSize={"contain"}
                 display={"flex"}
-                margin={"auto"}
+                // margin={"auto"}
               ></Box>
             </Flex>
           ))}

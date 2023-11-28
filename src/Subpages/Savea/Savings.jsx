@@ -11,8 +11,8 @@ const Savings = () => {
   return (
     <Box
       //  minH={'360px'} w={'90%'}  margin={'auto'}  alignItems={'center'} justifyContent={'center'} display={'flex'}
-      minH={{ base: "500px", lg: "40px", xl: "550px" }}
-      w={{ base: "100%", xl: "90%" }}
+      minH={{ base: "500px", md: "550px" }}
+      w={{ base: "100%", md: "90%" }}
       margin={"auto"}
       flexDirection={{ base: "column", md: "row" }}
       alignItems={"center"}
@@ -27,21 +27,21 @@ const Savings = () => {
           // alignItems={"center"}
           margin={"auto"}
           minH={"100px"}
-          justifyContent={{ base: "center", xl: "space-evenly" }}
+          justifyContent={{ base: "center", md: "space-evenly" }}
           alignItems={"center"}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
+          w={{ base: "100%", md: "100%" }}
         >
           <Box
             boxShadow="2xl"
             p="8"
             rounded="md"
             bg="white"
-            mt={{ base: "5", lg: "4", xl: "2" }}
+            mt={{ base: "5", md: "2" }}
             minH={"60px"}
-            w={{ base: "90%", lg: "50%", xl: "80%" }}
+            w={{ base: "90%", md: "80%" }}
           >
             <Box
-              mb={{ base: "5", lg: "4", xl: "2" }}
+              mb={{ base: "5", md: "2" }}
               h={"7"}
               w={"10%"}
               // mb={"2"}

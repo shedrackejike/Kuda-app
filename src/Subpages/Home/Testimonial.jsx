@@ -11,7 +11,7 @@ export default function Testimonial() {
   }, []);
 
   return (
-    <Box margin={"auto"} minH={"350px"}>
+    <Box margin={"auto"} minH={"370px"}>
       <Box minH={"15%"} w={"90%"} margin={"auto"}>
         <Text
           textColor={"#57357F"}

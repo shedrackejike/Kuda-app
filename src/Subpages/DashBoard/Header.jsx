@@ -5,6 +5,7 @@ import { PiTelegramLogoLight } from "react-icons/pi";
 import { MdOutlineEventNote } from "react-icons/md";
 import { FiCircle } from "react-icons/fi";
 import { FaIdCard } from "react-icons/fa6";
+import { Link as RouterLink } from "react-router-dom";
 
 import { Link, useNavigate } from "react-router-dom";
 // import { Link as RouterLink } from "react-router-dom";
@@ -195,21 +196,21 @@ const Header = () => {
                 backgroundRepeat={"no-repeat"}
                 backgroundPosition={"center"}
                 backgroundSize={"cover"}
-                display={"flex"}
+                display={{ base: "none", lg: "flex", xl: "flex" }}
                 margin={"auto"}
               ></Box>
 
               <Box
                 className="forf"
                 position={"relative"}
-                w={"75px"}
+                w={{ base: "175px", md: "75px" }}
                 justifyContent={"space-around"}
                 display={"flex"}
                 alignItems={"center"}
                 // title={user && user.name}
               >
                 <Text
-                  display={"flex"}
+                  display={{ base: "none", lg: "flex", xl: "flex" }}
                   alignItems={"center"}
                   textColor={"#57357F"}
                   fontSize={"15"}
@@ -255,7 +256,13 @@ const Header = () => {
               />
             </Flex>
 
-            <Flex h={"12"} w={"65%"} justify={"space-around"} align={"center"}>
+            <Flex
+              h={"12"}
+              w={"65%"}
+              justify={"space-around"}
+              align={"center"}
+              display={{ base: "none", lg: "flex", xl: "flex" }}
+            >
               <Box
                 textColor={"#57357F"}
                 w={"26%"}
@@ -295,6 +302,85 @@ const Header = () => {
                 display={"flex"}
                 margin={"auto"}
               ></Box>
+            </Flex>
+
+            <Flex
+              direction={"column"}
+              // bgColor="black"
+              // zIndex="300"
+              justify="space-around"
+              width={"100%"}
+            >
+              <Box
+                h={"70px"}
+                display={"flex"}
+                position={"relative"}
+                w={"70px"}
+                justifyContent={"space-between"}
+                alignItems={"center"}
+              >
+                <AiFillHome />
+
+                <Text
+                  marginLeft={"5"}
+                  fontWeight="semibold"
+                  fontSize={"20px"}
+                  className="person jdcbcccxbjh"
+                  display={"flex"}
+                  alignItems={"center"}
+                  textColor={"#57357F"}
+                  // fontSize={"15"}
+                  // fontWeight={"semibold"}
+                  _hover={""}
+                  cursor={"pointer"}
+                >
+                  {" "}
+                  Home
+                </Text>
+              </Box>
+
+              <Box h={"70px"} alignItems={"center"} display={"flex"}>
+                <Text marginLeft={"5"} fontWeight="semibold" fontSize={"20px"}>
+                  <Link as={RouterLink} to={"/discover"}>
+                    Send
+                  </Link>
+                </Text>
+              </Box>
+
+              <Box h={"70px"} alignItems={"center"} display={"flex"}>
+                <Text marginLeft={"5"} fontWeight="semibold" fontSize={"20px"}>
+                  Pay
+                </Text>
+              </Box>
+
+              <Box h={"70px"} alignItems={"center"} display={"flex"}>
+                <Text marginLeft={"5"} fontWeight="semibold" fontSize={"20px"}>
+                  Budget
+                </Text>
+              </Box>
+
+              <Box h={"70px"} alignItems={"center"} display={"flex"}>
+                <Text marginLeft={"5"} fontWeight="semibold" fontSize={"20px"}>
+                  Card
+                </Text>
+              </Box>
+
+              <Box
+                h={"70px"}
+                alignItems={"center"}
+                display={"flex"}
+                mt={"100px"}
+              >
+                <Text
+                  marginLeft={"5"}
+                  fontWeight="semibold"
+                  fontSize={"20px"}
+                  onClick={logOut}
+                  textColor={"red.300"}
+                >
+                  Log out
+                </Text>
+              </Box>
             </Flex>
           </Flex>
         </Flex>

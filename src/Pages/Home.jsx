@@ -14,20 +14,16 @@ import Money from "../Subpages/Home/Money";
 const Home = () => {
   return (
     <Box minH={"100vh"} w={"100%"} mt={"80px"}>
-      <Flex
-        margin={"auto"}
-        minH={"80%"}
-        w={{ base: "90%", lg: "86%", xl: "86%" }}
-      >
+      <Flex margin={"auto"} minH={"80%"} w={{ base: "90%", md: "86%" }}>
         <Flex
           minH={"550px"}
           alignItems={"center"}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column", md: "row" }}
         >
-          <Box minH={"440px"} w={{ base: "100%", lg: "50%", xl: "50%" }}>
-            <Box h={"30%"} w={"50"} mt={"5"}>
+          <Box minH={"440px"} w={{ base: "100%", md: "50%" }}>
+            <Box minH={"30%"} w={"50"} mt={"5"}>
               <Text
                 fontSize={"43px"}
                 fontWeight={"extrabold"}
@@ -37,7 +33,7 @@ const Home = () => {
               </Text>
             </Box>
 
-            <Box h={"22%"} w={"50"} mt={"9"}>
+            <Box minH={"22%"} w={{ base: "100%", md: "70%" }} mt={"9"}>
               <Text fontSize={"20px"}>
                 Make free transfers, enjoy cashless payment options and earn
                 interest on your savings with Kuda.
@@ -81,7 +77,7 @@ const Home = () => {
           </Box>
           <Flex
             minH="400px"
-            w={{ base: "100%", lg: "50%", xl: "50%" }}
+            w={{ base: "100%", md: "50%" }}
             // borderRadius="full"
             justify={"center"}
             alignItems={"center"}
@@ -95,23 +91,19 @@ const Home = () => {
         </Flex>
       </Flex>
 
-      <Box
-        w={"90%"}
-        margin={"auto"}
-        minH={{ base: "850px", lg: "40px", xl: "550px" }}
-      >
+      <Box w={"90%"} margin={"auto"} minH={{ base: "850px", md: "500px" }}>
         <Flex
-          margin={"auto"}
+          // margin={"auto"}
           minH={"200px"}
-          justifyContent={{ xl: "space-evenly" }}
+          justifyContent={{ md: "space-evenly" }}
           alignItems={"center"}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column", md: "row" }}
         >
           <Box
-            mt={{ base: "5", lg: "4", xl: "2" }}
+            mt={{ base: "5", md: "2" }}
             minH={"120"}
-            w={{ base: "100%", lg: "50%", xl: "80%" }}
+            w={{ base: "100%", md: "30%" }}
             boxShadow="md"
             p="6"
             rounded="md"
@@ -120,7 +112,7 @@ const Home = () => {
             <Box
               h={"7"}
               w={"10%"}
-              mb={{ base: "5", lg: "4", xl: "2" }}
+              mb={{ base: "5", md: "2" }}
               marginLeft={"4"}
               borderRadius={"50%"}
               alignItems={"center"}
@@ -140,9 +132,9 @@ const Home = () => {
           </Box>
 
           <Box
-            mt={{ base: "5", lg: "4", xl: "2" }}
+            mt={{ base: "5", md: "2" }}
             minH={"120"}
-            w={{ base: "100%", lg: "50%", xl: "80%" }}
+            w={{ base: "100%", md: "30%" }}
             boxShadow="md"
             p="6"
             rounded="md"
@@ -170,9 +162,9 @@ const Home = () => {
           </Box>
 
           <Box
-            mt={{ base: "5", lg: "4", xl: "2" }}
+            mt={{ base: "5", md: "2" }}
             minH={"120"}
-            w={{ base: "100%", lg: "50%", xl: "80%" }}
+            w={{ base: "100%", md: "30%" }}
             boxShadow="md"
             p="6"
             rounded="md"
@@ -203,15 +195,15 @@ const Home = () => {
         <Flex
           margin={"auto"}
           minH={"100px"}
-          justifyContent={{ xl: "space-evenly" }}
+          justifyContent={{ md: "space-evenly" }}
           alignItems={"center"}
-          w={{ base: "100%", lg: "50%", xl: "80%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
+          w={{ base: "100%", md: "80%" }}
+          flexDirection={{ base: "column", md: "row" }}
         >
           <Box
-            mt={{ base: "5", lg: "4", xl: "2" }}
+            mt={{ base: "5", md: "2" }}
             minH={"120"}
-            w={{ base: "100%", lg: "50%", xl: "80%" }}
+            w={{ base: "100%", md: "40%" }}
             boxShadow="md"
             p="6"
             rounded="md"
@@ -239,9 +231,9 @@ const Home = () => {
           </Box>
 
           <Box
-            mt={{ base: "5", lg: "4", xl: "2" }}
+            mt={{ base: "5", md: "2" }}
             minH={"120"}
-            w={{ base: "100%", lg: "50%", xl: "80%" }}
+            w={{ base: "100%", md: "40%" }}
             boxShadow="md"
             p="6"
             rounded="md"
@@ -273,45 +265,56 @@ const Home = () => {
       <Box
         mt={"60px"}
         margin={"auto"}
-        minH={{ base: "750px", lg: "40px", xl: "550px" }}
-        w={{ base: "100%", lg: "86%", xl: "90%" }}
+        minH={{ base: "750px", md: "550px" }}
+        w={{ base: "100%", md: "90%" }}
       >
         <Flex
           margin={"auto"}
           alignItems={"center"}
-          minH={{ base: "420px", lg: "40px", xl: "440px" }}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
+          minH={{ base: "420px", md: "440px" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column", md: "row" }}
         >
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "400px" }}
+            w={{ base: "95%", md: "90%" }}
             // alignItems={"center"}
             justifyContent={"center"}
             display={"flex"}
             flexDirection={"column"}
           >
-            <Box h={"60%"} w={{ base: "60%", lg: "50%", xl: "50%" }}>
+            <Box
+              minH={"60%"}
+              w={{ base: "60%", md: "50%" }}
+              margin={{ base: "auto", md: "none" }}
+            >
               <Text
-                fontSize={{ base: "29px", lg: "50%", xl: "40px" }}
+                fontSize={{ base: "29px", md: "40px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
               >
                 Your phone + our app + a debit card = a simpler life.
               </Text>
             </Box>
 
-            <Box mt={2} h={"20%"} w={{ base: "80%", lg: "50%", xl: "70%" }}>
-              <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+            <Box
+              mt={2}
+              h={"35%"}
+              w={{ base: "80%", md: "70%" }}
+              alignItems={{ base: "center" }}
+              justifyContent={{ base: "center" }}
+              display={{ base: "flex" }}
+              margin={{ base: "auto" }}
+            >
+              <Text>
                 We designed a money app for your lifestyle, and you can get a
                 debit card to go with it. That's all you need to make the right
                 money moves.
               </Text>
             </Box>
 
-            <Flex w={"70%"} h={"13%"} mt={"3"}>
+            <Flex w={"70%"} h={"13%"} mt={"3"} margin={{ base: "auto" }}>
               <Link>
                 <Text
                   fontWeight={"bold"}
@@ -319,6 +322,7 @@ const Home = () => {
                   justifyContent={"center"}
                   alignItems={"center"}
                   display={"flex"}
+                  textAlign={{ base: "center" }}
                 >
                   Open An Account in Minutes <LuChevronRight />
                 </Text>
@@ -328,8 +332,8 @@ const Home = () => {
 
           <Box
             margin={"auto"}
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "300px" }}
+            w={{ base: "95%", md: "90%" }}
           >
             <Image
               objectFit="cover"
@@ -344,19 +348,19 @@ const Home = () => {
 
       <Box
         margin={"auto"}
-        minH={{ base: "750px", lg: "40px", xl: "550px" }}
-        w={{ base: "100%", lg: "86%", xl: "90%" }}
+        minH={{ base: "750px", md: "550px" }}
+        w={{ base: "100%", md: "90%" }}
       >
         <Flex
           alignItems={"center"}
-          minH={{ base: "420px", lg: "40px", xl: "440px" }}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column-reverse", lg: "row", xl: "row" }}
+          minH={{ base: "420px", md: "440px" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column-reverse", md: "row" }}
         >
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "300px" }}
+            w={{ base: "95%", md: "90%" }}
           >
             <Image
               objectFit="cover"
@@ -368,28 +372,28 @@ const Home = () => {
           </Box>
 
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "400px" }}
+            w={{ base: "95%", md: "90%" }}
             alignItems={"center"}
             justifyContent={"center"}
             display={"flex"}
             flexDirection={"column"}
           >
-            <Box h={"25%"} w={"80%"}>
+            <Box minH={"25%"} w={"68%"}>
               <Text
-                fontSize={{ base: "26px", lg: "50%", xl: "40px" }}
+                fontSize={{ base: "26px", md: "35px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
+                textAlign={{ base: "center", md: "none" }}
               >
                 It’s your money, we just help you manage it.
               </Text>
             </Box>
 
-            <Box h={"25%"} mt={"6"} w={{ base: "80%", lg: "50%", xl: "70%" }}>
+            <Box h={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
               <Text
                 fontSize={"15.4px"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
+                textAlign={{ base: "center", md: "none" }}
               >
                 Save it, spend it, send it. It’s up to you. Whatever you choose
                 to do with your money, we’ll make sure it’s done better and free
@@ -402,58 +406,59 @@ const Home = () => {
 
       <Box
         margin={"auto"}
-        minH={{ base: "750px", lg: "40px", xl: "550px" }}
-        w={{ base: "100%", lg: "86%", xl: "90%" }}
+        minH={{ base: "750px", md: "550px" }}
+        w={{ base: "100%", md: "90%" }}
       >
         <Flex
           alignItems={"center"}
-          minH={{ base: "420px", lg: "40px", xl: "440px" }}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
+          minH={{ base: "420px", md: "440px" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column", md: "row" }}
         >
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "400px" }}
+            w={{ base: "95%", md: "45%" }}
             alignItems={"center"}
-            justifyContent={"center"}
+            // justifyContent={"center"}
             display={"flex"}
             flexDirection={"column"}
           >
             <Box h={"35%"} w={"70%"}>
               <Text
-                fontSize={{ base: "26px", lg: "50%", xl: "40px" }}
+                fontSize={{ base: "26px", md: "40px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
+                textAlign={{ base: "center", md: "0" }}
               >
                 Save money as you spend it, seriously.
               </Text>
             </Box>
-            <Box h={"25%"} mt={"6"} w={{ base: "80%", lg: "50%", xl: "70%" }}>
-              <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+            <Box h={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
+              <Text
+              // textAlign={{ base: "center", md: "0" }}
+              >
                 You can’t avoid spending. That’s how you pay for your needs. But
                 we can help you put money away every time you pay for something.
                 Just set a percentage to save and watch your money grow.
               </Text>
             </Box>
-            <Flex h={"18%"} w={"70%"} mt={"2"}>
+            <Box minH={"18%"} w={"70%"} margin={{ base: "auto" }}>
               <Link>
                 <Text
                   textColor={"#57357F"}
-                  justifyContent={"center"}
                   alignItems={"center"}
                   display={"flex"}
                 >
                   See all our Savings <LuChevronRight />
                 </Text>
               </Link>
-            </Flex>
+            </Box>
           </Box>
 
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "250px" }}
+            w={{ base: "95%", md: "40%" }}
           >
             <Image
               objectFit="inherit"
@@ -468,19 +473,19 @@ const Home = () => {
 
       <Box
         margin={"auto"}
-        minH={{ base: "750px", lg: "40px", xl: "550px" }}
-        w={{ base: "100%", lg: "86%", xl: "90%" }}
+        minH={{ base: "750px", md: "550px" }}
+        w={{ base: "100%", md: "90%" }}
       >
         <Flex
           alignItems={"center"}
-          minH={{ base: "420px", lg: "40px", xl: "440px" }}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column-reverse", lg: "row", xl: "row" }}
+          minH={{ base: "420px", md: "440px" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column-reverse", md: "row" }}
         >
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "300px" }}
+            w={{ base: "95%", md: "40%" }}
           >
             <Image
               objectFit="inherit"
@@ -492,25 +497,27 @@ const Home = () => {
           </Box>
 
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "400px" }}
+            w={{ base: "95%", md: "45%" }}
             alignItems={"center"}
             justifyContent={"center"}
             display={"flex"}
             flexDirection={"column"}
           >
-            <Box h={"39%"} w={"80%"}>
+            <Box minH={"39%"} w={"70%"} alignItems={"center"}>
               <Text
-                fontSize={{ base: "26px", lg: "50%", xl: "40px" }}
+                fontSize={{ base: "26px", md: "32px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
+                // textAlign={{ base: "center", md: "none" }}
               >
                 Turn off access, turn on safety.
               </Text>
             </Box>
-            <Box h={"25%"} mt={"6"} w={{ base: "80%", lg: "50%", xl: "70%" }}>
-              <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+            <Box minH={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
+              <Text
+              // textAlign={{ base: "center", md: "0" }}
+              >
                 Life happens. Milk spills. Debit cards go missing. If that ever
                 happens, you can block your missing card on the app so no one
                 can use it. We’d like to see them try.
@@ -520,7 +527,7 @@ const Home = () => {
               <Link>
                 <Text
                   textColor={"#57357F"}
-                  justifyContent={"center"}
+                  // justifyContent={"center"}
                   alignItems={"center"}
                   display={"flex"}
                 >
@@ -534,43 +541,45 @@ const Home = () => {
 
       <Box
         margin={"auto"}
-        minH={{ base: "750px", lg: "40px", xl: "550px" }}
-        w={{ base: "100%", lg: "86%", xl: "90%" }}
+        minH={{ base: "750px", md: "550px" }}
+        w={{ base: "100%", md: "90%" }}
       >
         <Flex
           alignItems={"center"}
-          minH={{ base: "420px", lg: "40px", xl: "440px" }}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
+          minH={{ base: "420px", md: "440px" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column", md: "row" }}
         >
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "400px" }}
+            w={{ base: "95%", md: "45%" }}
             alignItems={"center"}
             justifyContent={"center"}
             display={"flex"}
             flexDirection={"column"}
           >
-            <Box h={"39%"} w={"80%"}>
+            <Box minH={"39%"} w={"70%"}>
               <Text
-                fontSize={{ base: "26px", lg: "50%", xl: "40px" }}
+                fontSize={{ base: "26px", md: "32px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
+                // textAlign={{ base: "center", lg: "0", xl: "0" }}
               >
                 We’re always happy to help you.
               </Text>
             </Box>
-            <Box h={"25%"} w={{ base: "80%", lg: "50%", xl: "70%" }} mt={"2"}>
-              <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+            <Box minH={"25%"} w={{ base: "80%", md: "70%" }} mt={"2"}>
+              <Text
+              // textAlign={{ base: "center", lg: "0", xl: "0" }}
+              >
                 You can chat with us on the app, slide into our DMs, tweet,
                 leave an Instagram comment, send an email or call. However you
                 choose to reach out, there’ll always be a friendly person there
                 to make your life easy.
               </Text>
             </Box>
-            <Flex h={"18%"} w={"70%"} mt={"2"}>
+            <Flex minH={"18%"} w={"70%"} mt={"2"}>
               <Link>
                 <Text
                   textColor={"#57357F"}
@@ -585,8 +594,8 @@ const Home = () => {
           </Box>
 
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "300px" }}
+            w={{ base: "95%", md: "45%" }}
           >
             <Image
               objectFit="inherit"
@@ -601,19 +610,19 @@ const Home = () => {
 
       <Box
         margin={"auto"}
-        minH={{ base: "750px", lg: "40px", xl: "550px" }}
-        w={{ base: "100%", lg: "86%", xl: "90%" }}
+        minH={{ base: "750px", md: "550px" }}
+        w={{ base: "100%", md: "90%" }}
       >
         <Flex
           alignItems={"center"}
-          minH={{ base: "420px", lg: "40px", xl: "440px" }}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column-reverse", lg: "row", xl: "row" }}
+          minH={{ base: "420px", md: "440px" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column-reverse", md: "row" }}
         >
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "60%" }}
+            minH={{ base: "400px", md: "300px" }}
+            w={{ base: "95%", md: "40%" }}
           >
             <Image
               objectFit="inherit"
@@ -625,30 +634,32 @@ const Home = () => {
           </Box>
 
           <Box
-            minH={{ base: "400px", lg: "50%", xl: "400px" }}
-            w={{ base: "95%", lg: "50%", xl: "90%" }}
+            minH={{ base: "400px", md: "400px" }}
+            w={{ base: "95%", md: "45%" }}
             alignItems={"center"}
             justifyContent={"center"}
             display={"flex"}
             flexDirection={"column"}
           >
-            <Box h={"39%"} w={"80%"}>
+            <Box minH={"39%"} w={"70%"}>
               <Text
-                fontSize={{ base: "26px", lg: "50%", xl: "40px" }}
+                fontSize={{ base: "26px", md: "32px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
-                textAlign={{ base: "center", lg: "0", xl: "0" }}
+                // textAlign={{ base: "center", md: "0" }}
               >
                 Fees as clear as glass.
               </Text>
             </Box>
-            <Box h={"25%"} mt={"6"} w={{ base: "80%", lg: "50%", xl: "70%" }}>
-              <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
+            <Box minH={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
+              <Text
+              //  textAlign={{ base: "center", lg: "0", xl: "0" }}
+              >
                 We’re serious about free banking, and we will never, ever charge
                 you for anything without your consent.
               </Text>
             </Box>
-            <Flex h={"18%"} w={"70%"} mt={"2"}>
+            <Flex h={"18%"} w={"70%"} mt={"5"}>
               <Link>
                 <Text
                   textColor={"#57357F"}

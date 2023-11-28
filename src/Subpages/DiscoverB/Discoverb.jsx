@@ -9,7 +9,7 @@ const Discoverb = () => {
     setDiscover(discoverData);
   }, []);
   return (
-    <Box>
+    <Box mt={"80px"}>
       <Box>
         <Box minH={"550px"} w={"90%"} margin={"auto"}>
           {discover?.map((data) => (

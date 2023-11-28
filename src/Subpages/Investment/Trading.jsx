@@ -8,26 +8,42 @@ const Trading = () => {
   return (
     <Box>
       <Box>
-        <Box minH={"550px"} w={"90%"} margin={"auto"}>
+        <Box
+          // minH={"550px"} w={"90%"} margin={"auto"}
+          margin={"auto"}
+          w={{ base: "100%", md: "90%" }}
+          mt={"90px"}
+          minH={{ base: "350px", md: "550px" }}
+        >
           {trading?.map((data) => (
             <Flex
-              minH={"500px"}
-              w={"100%"}
-              justifyContent={"space-evenly"}
+              minH={{ base: "300px", md: "550px" }}
               alignItems={"center"}
+              justifyContent={{ md: "space-between" }}
+              w={{ base: "100%", md: "100%" }}
+              flexDirection={{ base: "column", md: "row" }}
             >
-              <Box minH={"250px"} w={"40%"}>
-                <Box minH={"80px"} w={"450px"}>
+              <Box
+                //  minH={"250px"} w={"40%"}
+                minH={{ base: "300px", md: "400px" }}
+                w={{ base: "90%", md: "40%" }}
+                alignItems={"center"}
+                justifyContent={"center"}
+                display={"flex"}
+                flexDirection={"column"}
+              >
+                <Box minH={"80px"} w={{ base: "250px", md: "450px" }}>
                   <Text
-                    fontSize={"34px"}
-                    fontWeight={"extrabold"}
                     textColor={"#40196D"}
+                    fontSize={{ base: "20px", md: "40px" }}
+                    fontWeight={"bold"}
+                    textAlign={{ base: "center", md: "left" }}
                   >
                     {data.head}
                   </Text>
                 </Box>
 
-                <Box minH={"80px"} w={"400px"} mt={"3"}>
+                <Box minH={"80px"} mt={"3"} w={{ base: "100%", md: "364px" }}>
                   <Text>{data.Comment}</Text>
                 </Box>
                 <Text fontSize={"12"}>{data.clear}</Text>
@@ -44,6 +60,7 @@ const Trading = () => {
                       fontSize={"15px"}
                       fontWeight={"semibold"}
                       textColor={"#40196D"}
+                      marginLeft={{ base: "120px", md: "0" }}
                     >
                       {data.button}
                     </Text>
@@ -52,8 +69,8 @@ const Trading = () => {
               </Box>
 
               <Box
-                minH={"470px"}
-                w={"50%"}
+                minH={{ base: "300px", md: "400px" }}
+                w={{ base: "90%", md: "50%" }}
                 justify={"center"}
                 alignItems={"center"}
                 backgroundImage={data.Image}
@@ -61,7 +78,6 @@ const Trading = () => {
                 backgroundPosition={"center"}
                 backgroundSize={"contain"}
                 display={"flex"}
-                // margin={"auto"}
               ></Box>
             </Flex>
           ))}

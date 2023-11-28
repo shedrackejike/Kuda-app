@@ -10,28 +10,22 @@ const Buying = () => {
     <Box>
       <Box>
         <Box
-          //  minH={"550px"} w={"90%"}
           margin={"auto"}
-          w={{ base: "100%", lg: "86%", xl: "90%" }}
+          w={{ base: "100%", md: "90%" }}
           mt={"90px"}
-          minH={{ base: "350px", xl: "550px" }}
+          minH={{ base: "350px", md: "550px" }}
         >
           {buying?.map((data) => (
             <Flex
-              // minH={"500px"}
-              // w={"100%"}
-              // justifyContent={"space-evenly"}
-              // alignItems={"center"}
-              minH={{ base: "300px", xl: "550px" }}
+              minH={{ base: "300px", md: "550px" }}
               alignItems={"center"}
-              justifyContent={{ xl: "space-between" }}
-              w={{ base: "100%", lg: "50%", xl: "100%" }}
+              justifyContent={{ md: "space-between" }}
+              w={{ base: "100%", md: "100%" }}
               flexDirection={{ base: "column", md: "row" }}
             >
               <Box
-                // minH={"250px"} w={"40%"}
-                minH={{ base: "300px", lg: "50%", xl: "400px" }}
-                w={{ base: "90%", lg: "50%", xl: "90%" }}
+                minH={{ base: "300px", md: "400px" }}
+                w={{ base: "90%", md: "40%" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -39,32 +33,22 @@ const Buying = () => {
               >
                 <Box minH={"80px"} w={"330px"}>
                   <Text
-                    // fontSize={"25px"}
-                    fontWeight={"extrabold"}
                     textColor={"#40196D"}
-                    fontSize={{ base: "26px", lg: "50%", xl: "40px" }}
-                    // fontWeight={"bold"}
-                    // textColor={"#57357F"}
-                    textAlign={{ base: "center", lg: "0", xl: "0" }}
+                    fontSize={{ base: "26px", md: "35px" }}
+                    fontWeight={"bold"}
+                    textAlign={{ base: "center", md: "left" }}
                   >
                     {data.head}
                   </Text>
                 </Box>
 
-                <Box
-                  minH={"80px"}
-                  // w={"400px"}
-                  mt={"3"}
-                  w={{ base: "80%", lg: "50%", xl: "400px" }}
-                >
-                  <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
-                    {data.Comment}
-                  </Text>
+                <Box minH={"80px"} mt={"3"} w={{ base: "80%", md: "364px" }}>
+                  <Text textAlign={{ base: "center" }}>{data.Comment}</Text>
                 </Box>
 
                 <Box
                   minH={"40px"}
-                  w={"320px"}
+                  w={{ base: "300px", md: "320px" }}
                   mt={"3"}
                   alignItems={"center"}
                   justifyContent={"center"}
@@ -82,8 +66,8 @@ const Buying = () => {
               </Box>
 
               <Box
-                minH={{ base: "300px", lg: "50%", xl: "400px" }}
-                w={{ base: "100%", lg: "50%", xl: "60%" }}
+                minH={{ base: "300px", md: "400px" }}
+                w={{ base: "100%", md: "50%" }}
                 justify={"center"}
                 alignItems={"center"}
                 backgroundImage={data.Image}
@@ -91,7 +75,6 @@ const Buying = () => {
                 backgroundPosition={"center"}
                 backgroundSize={"contain"}
                 display={"flex"}
-                // margin={"auto"}
               ></Box>
             </Flex>
           ))}

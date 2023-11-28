@@ -25,24 +25,24 @@ const Nav = () => {
     <Flex
       minH="65px"
       w={"100%"}
-      bg={"white"}
       position={"fixed"}
       zIndex={"5"}
       top="0"
+      boxShadow="md"
+      p="2"
+      bg="white"
     >
       <Flex
-        bg={"green"}
         h={"100%"}
         m={"auto"}
         display={"flex"}
-        justify={{ base: "space-between", xl: "space-around" }}
+        justify={{ base: "space-between", xl: "space-between" }}
         align={"center"}
         w={{ base: "100%", md: "90%" }}
       >
         <Flex w={"60%"}>
           <Link to="/">
-            <Flex w={"30%"} h="50px" pt="0px" align="center">
-              {/* {colorMode === "light" ? ( */}
+            <Box w={"30%"} h="50px" pt="0px" align="center">
               <Image
                 objectFit="cover"
                 src="/images/kudalogo.png"
@@ -50,29 +50,11 @@ const Nav = () => {
                 mb={"3"}
                 width={"440px"}
               />
-              {/* ) : ( */}
-              {/* <Image
-                  objectFit="cover"
-                  src="/images/kudalogo.png"
-                  alt="logo"
-                  width={"440px"}
-                  mb={"3"}
-                /> */}
-              {/* )} */}
-            </Flex>
+            </Box>
           </Link>
-          {/* <Box>
-            <Image
-              objectFit="cover"
-              src="/images/kudalogo.png"
-              alt="logo"
-              width={"70px"}
-              mb={""}
-            />
-          </Box> */}
 
           <Flex
-            w={"70%"}
+            w={"100%"}
             justify={"space-evenly"}
             align={"center"}
             display={{ base: "none", lg: "flex", xl: "flex" }}
@@ -147,7 +129,7 @@ const Nav = () => {
             </Box>
           </Flex>
         </Flex>
-        <Flex h={"12"} w={"65%"} justify={"space-around"} align={"center"}>
+        <Flex h={"12"} w={"30%"} justify={"space-around"} align={"center"}>
           <Box
             textColor={"#57357F"}
             w={"26%"}

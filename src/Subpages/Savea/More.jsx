@@ -9,10 +9,10 @@ const More = () => {
   return (
     <Box
       margin={"auto"}
-      w={{ base: "100%", lg: "86%", xl: "90%" }}
+      w={{ base: "100%", md: "90%" }}
       mt={"90px"}
       // bg={"red"}
-      minH={{ base: "350px", xl: "550px" }}
+      minH={{ base: "350px", md: "550px" }}
     >
       {save?.map((data) => (
         <Flex
@@ -20,17 +20,17 @@ const More = () => {
           //   w={"100%"}
           //   justifyContent={"space-around"}
           //   alignItems={"center"}
-          minH={{ base: "300px", xl: "550px" }}
+          minH={{ base: "300px", md: "550px" }}
           alignItems={"center"}
-          justifyContent={{ xl: "space-between" }}
-          w={{ base: "100%", lg: "50%", xl: "100%" }}
-          flexDirection={{ base: "column", lg: "row", xl: "row" }}
+          justifyContent={{ md: "space-between" }}
+          w={{ base: "100%", md: "100%" }}
+          flexDirection={{ base: "column", md: "row" }}
         >
           <Box
             //   minH={"250px"} w={"40%"}
             // bg={"red"}
-            minH={{ base: "300px", lg: "50%", xl: "400px" }}
-            w={{ base: "90%", lg: "50%", xl: "90%" }}
+            minH={{ base: "300px", md: "400px" }}
+            w={{ base: "90%", md: "40%" }}
             // alignItems={"center"}
             justifyContent={{ base: "left", md: "center" }}
             display={"flex"}
@@ -38,7 +38,7 @@ const More = () => {
           >
             <Box minH={"80px"} w={"390px"}>
               <Text
-                fontSize={{ base: "46px", lg: "50%", xl: "40px" }}
+                fontSize={{ base: "46px", md: "40px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
                 textAlign={{ base: "center", md: "left" }}
@@ -51,7 +51,7 @@ const More = () => {
               minH={"80px"}
               //   w={"400px"}
               mt={"3"}
-              w={{ base: "80%", lg: "50%", xl: "400px" }}
+              w={{ base: "80%", md: "400px" }}
             >
               <Text textAlign={{ base: "center", md: "left" }}>
                 {data.Comment}
@@ -76,8 +76,8 @@ const More = () => {
           <Box
             // minH={"470px"}
             // w={"50%"}
-            minH={{ base: "390px", lg: "50%", xl: "400px" }}
-            w={{ base: "90%", lg: "50%", xl: "60%" }}
+            minH={{ base: "390px", md: "400px" }}
+            w={{ base: "90%", md: "45%" }}
             justify={"center"}
             alignItems={"center"}
             backgroundImage={data.Image}

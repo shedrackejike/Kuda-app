@@ -12,16 +12,16 @@ const Footer = () => {
         minH={"100px"}
         // margin={"auto"}
         m={"7"}
-        justifyContent={{ xl: "space-evenly" }}
-        flexDirection={{ base: "row", lg: "column", xl: "row" }}
-        w={{ base: "90%", lg: "86%", xl: "90%" }}
+        justifyContent={{ md: "space-evenly" }}
+        flexDirection={{ base: "row", md: "row" }}
+        w={{ base: "90%", md: "90%" }}
         margin={"auto"}
         wrap={"wrap"}
       >
-        <Flex w={{ base: "100%", lg: "11%", xl: "100px" }} mb={"20px"}>
+        <Flex w={{ base: "100%", md: "100px" }} mb={"20px"}>
           <Box
             minH={"50px"}
-            w={{ base: "100%", lg: "11%", xl: "100px" }}
+            w={{ base: "100%", md: "100px" }}
             justify={"left"}
             backgroundImage="images/kudalogo.png"
             backgroundRepeat={"no-repeat"}
@@ -30,7 +30,7 @@ const Footer = () => {
           ></Box>
         </Flex>
 
-        <Box minH={"200px"} w={{ base: "50%", lg: "11%", xl: "170px" }}>
+        <Box minH={"200px"} w={{ base: "50%", md: "170px" }}>
           <Text fontWeight={"bold"} textColor={"#57357F"}>
             Personal
           </Text>
@@ -51,7 +51,7 @@ const Footer = () => {
           </Text>
         </Box>
 
-        <Box minH={"200px"} w={{ base: "50%", lg: "11%", xl: "170px" }}>
+        <Box minH={"200px"} w={{ base: "50%", md: "170px" }}>
           <Text fontWeight={"bold"} textColor={"#57357F"}>
             Business
           </Text>
@@ -72,7 +72,7 @@ const Footer = () => {
           </Text>
         </Box>
 
-        <Box minH={"200px"} w={{ base: "50%", lg: "11%", xl: "170px" }}>
+        <Box minH={"200px"} w={{ base: "50%", md: "170px" }}>
           <Text fontWeight={"bold"} textColor={"#57357F"}>
             Company
           </Text>
@@ -90,7 +90,7 @@ const Footer = () => {
           </Text>
         </Box>
 
-        <Box minH={"200px"} w={{ base: "50%", lg: "11%", xl: "170px" }}>
+        <Box minH={"200px"} w={{ base: "50%", md: "170px" }}>
           <Text fontWeight={"bold"} textColor={"#57357F"}>
             Help
           </Text>
@@ -114,7 +114,7 @@ const Footer = () => {
           </Text>
         </Box>
 
-        <Box minH={"200px"} w={{ base: "50%", lg: "11%", xl: "170px" }}>
+        <Box minH={"200px"} w={{ base: "50%", md: "170px" }}>
           <Text fontWeight={"bold"} textColor={"#57357F"}>
             Transparency
           </Text>
@@ -133,20 +133,17 @@ const Footer = () => {
         </Box>
       </Flex>
 
-      <Box minH={"60px"} w={{ base: "100%", lg: "86%", xl: "40%" }}>
+      <Box minH={"60px"} w={{ base: "100%", md: "40%" }} bg={"red"}>
         <Flex
           minH={"50px"}
-          // w={"96%"}
-          // margin={"auto"}
-          // justifyContent={"space-evenly"}
-          justifyContent={{ base: "space-around", xl: "space-between" }}
-          flexDirection={{ base: "row", lg: "column", xl: "row" }}
-          w={{ base: "100%", lg: "86%", xl: "107%" }}
+          justifyContent={{ base: "space-around", md: "space-between" }}
+          flexDirection={{ base: "row", md: "row" }}
+          w={{ base: "100%", md: "107%" }}
           margin={"auto"}
         >
           <Box
-            minH={"40px"}
-            w={{ base: "30%", lg: "11%", xl: "170px" }}
+            minH={{ base: "10px", md: "40px" }}
+            w={{ base: "90px", md: "170px" }}
             justify={"center"}
             alignItems={"center"}
             backgroundImage="images/appStore.png"
@@ -157,8 +154,8 @@ const Footer = () => {
           ></Box>
 
           <Box
-            minH={"40px"}
-            w={{ base: "30%", lg: "11%", xl: "170px" }}
+            minH={{ base: "10px", md: "40px" }}
+            w={{ base: "90px", md: "170px" }}
             justify={"center"}
             alignItems={"center"}
             backgroundImage="images/GooglePlay.png"
@@ -169,8 +166,8 @@ const Footer = () => {
           ></Box>
 
           <Box
-            minH={"40px"}
-            w={{ base: "30%", lg: "11%", xl: "170px" }}
+            minH={{ base: "20px", md: "40px" }}
+            w={{ base: "70px", md: "170px" }}
             justify={"center"}
             alignItems={"center"}
             backgroundImage="images/web.png"
@@ -190,20 +187,17 @@ const Footer = () => {
 
       <Box
         minH={"100%"}
-        justifyContent={{ xl: "space-evenly" }}
-        flexDirection={{ base: "column", lg: "column", xl: "row" }}
-        w={{ base: "90%", lg: "86%", xl: "100%" }}
+        justifyContent={{ md: "space-evenly" }}
+        flexDirection={{ base: "column", md: "row" }}
+        w={{ base: "90%", md: "100%" }}
         margin={"auto"}
       >
         <Flex
           minH={"100px"}
-          // w={"90%"}
-          // margin={"auto"}
           m={"7"}
-          // justifyContent={"space-evenly"}
-          justifyContent={{ xl: "space-evenly" }}
-          flexDirection={{ base: "column", lg: "column", xl: "row" }}
-          w={{ base: "100%", lg: "86%", xl: "100%" }}
+          justifyContent={{ md: "space-evenly" }}
+          flexDirection={{ base: "column", md: "row" }}
+          w={{ base: "100%", md: "100%" }}
           margin={"auto"}
         >
           <Box h={"150px"} w={"350px"}>
@@ -217,14 +211,14 @@ const Footer = () => {
             </Link>
             <Flex
               minH={"50px"}
-              w={"350px"}
+              w={{ base: "75%", md: "100%" }}
               justifyContent={"space-evenly"}
               mt={"5"}
             >
               <Box
                 borderRadius={"3xl"}
-                minH={"45px"}
-                w={"45px"}
+                minH={{ base: "40px", md: "45px" }}
+                w={{ base: "40px", md: "45px" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -235,8 +229,8 @@ const Footer = () => {
 
               <Box
                 borderRadius={"3xl"}
-                minH={"45px"}
-                w={"45px"}
+                minH={{ base: "40px", md: "45px" }}
+                w={{ base: "40px", md: "45px" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -247,8 +241,8 @@ const Footer = () => {
 
               <Box
                 borderRadius={"3xl"}
-                minH={"45px"}
-                w={"45px"}
+                minH={{ base: "40px", md: "45px" }}
+                w={{ base: "40px", md: "45px" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -259,8 +253,8 @@ const Footer = () => {
 
               <Box
                 borderRadius={"3xl"}
-                minH={"45px"}
-                w={"45px"}
+                minH={{ base: "40px", md: "45px" }}
+                w={{ base: "40px", md: "45px" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -271,8 +265,8 @@ const Footer = () => {
 
               <Box
                 borderRadius={"3xl"}
-                minH={"45px"}
-                w={"45px"}
+                minH={{ base: "40px", md: "45px" }}
+                w={{ base: "40px", md: "45px" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -283,8 +277,8 @@ const Footer = () => {
 
               <Box
                 borderRadius={"3xl"}
-                minH={"45px"}
-                w={"45px"}
+                minH={{ base: "40px", md: "45px" }}
+                w={{ base: "40px", md: "45px" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -332,8 +326,8 @@ const Footer = () => {
 
       <Box
         margin={"auto"}
-        minH={{ base: "620px", xl: "100%" }}
-        w={{ base: "100%", lg: "86%", xl: "100%" }}
+        minH={{ base: "620px", md: "100%" }}
+        w={{ base: "100%", md: "100%" }}
       >
         <Box minH={"300px"} w={"93%"} margin={"auto"} mt={{ base: "5" }}>
           <Box minH={"70px"} w={"70%"}>

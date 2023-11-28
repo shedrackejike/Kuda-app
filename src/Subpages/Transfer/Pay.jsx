@@ -14,26 +14,22 @@ const Pay = () => {
           alignItems={"center"}
           justifyContent={"center"}
           display={"flex"}
-          minH={{ base: "500px", lg: "40px", xl: "550px" }}
-          w={{ base: "100%", lg: "86%", xl: "90%" }}
+          minH={{ base: "500px", md: "550px" }}
+          w={{ base: "100%", md: "90%" }}
         >
           {pay?.map((data) => (
             <Flex
-              // minH={"500px"}
-              // w={"98%"}
-              // justifyContent={"space-between"}
-              // alignItems={"center"}
               alignItems={"center"}
-              minH={{ base: "420px", lg: "40px", xl: "500px" }}
-              justifyContent={{ xl: "space-between" }}
-              w={{ base: "100%", lg: "50%", xl: "100%" }}
-              flexDirection={{ base: "column-reverse", lg: "row", xl: "row" }}
+              minH={{ base: "420px", md: "500px" }}
+              justifyContent={{ md: "space-between" }}
+              w={{ base: "100%", md: "100%" }}
+              flexDirection={{ base: "column-reverse", md: "row" }}
             >
               <Box
                 // minH={"470px"}
                 // w={"40%"}
-                minH={{ base: "400px", lg: "50%", xl: "400px" }}
-                w={{ base: "90%", lg: "50%", xl: "40%" }}
+                minH={{ base: "400px", md: "400px" }}
+                w={{ base: "90%", md: "40%" }}
                 justify={"center"}
                 alignItems={"center"}
                 backgroundImage={data.Image}
@@ -45,8 +41,8 @@ const Pay = () => {
 
               <Box
                 // minH={"250px"} w={"40%"}
-                minH={{ base: "400px", lg: "50%", xl: "250px" }}
-                w={{ base: "95%", lg: "50%", xl: "40%" }}
+                minH={{ base: "400px", md: "250px" }}
+                w={{ base: "95%", md: "40%" }}
                 alignItems={"center"}
                 justifyContent={"center"}
                 display={"flex"}
@@ -58,23 +54,17 @@ const Pay = () => {
                     // fontWeight={"extrabold"}
                     // textColor={"#40196D"}
                     textColor={"#40196D"}
-                    fontSize={{ base: "36px", lg: "50%", xl: "30px" }}
+                    fontSize={{ base: "36px", md: "30px" }}
                     fontWeight={"bold"}
                     // textColor={"#57357F"}
-                    textAlign={{ base: "center", lg: "0", xl: "0" }}
+                    textAlign={{ base: "center" }}
                   >
                     {data.head}
                   </Text>
                 </Box>
 
-                <Box
-                  minH={"80px"}
-                  mt={"3"}
-                  w={{ base: "80%", lg: "50%", xl: "400px" }}
-                >
-                  <Text textAlign={{ base: "center", lg: "0", xl: "0" }}>
-                    {data.Comment}
-                  </Text>
+                <Box minH={"80px"} mt={"3"} w={{ base: "80%", md: "400px" }}>
+                  <Text textAlign={{ base: "center" }}>{data.Comment}</Text>
                 </Box>
               </Box>
             </Flex>

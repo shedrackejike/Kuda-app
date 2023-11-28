@@ -12,10 +12,10 @@ const Choose = () => {
   return (
     <Box
       margin={"auto"}
-      minH={{ base: "280px", lg: "40px", xl: "550px" }}
-      w={{ base: "100%", lg: "86%", xl: "90%" }}
+      minH={{ base: "280px", md: "550px" }}
+      w={{ base: "100%", md: "90%" }}
     >
-      <Box w={"50%"} minH={"60px"} margin={"auto"} mt={"5"}>
+      <Box minH={"60px"} margin={"auto"} mt={"5"}>
         <Text
           textAlign={"center"}
           fontSize={"33px"}
@@ -36,20 +36,19 @@ const Choose = () => {
             margin={"auto"}
           >
             <Box
-              border={"1px"}
-              minH={{ base: "300px", lg: "50%", xl: "400px" }}
-              w={{ base: "95%", lg: "50%", xl: "90%" }}
+              minH={{ base: "300px", md: "400px" }}
+              w={{ base: "95%", md: "90%" }}
               boxShadow="2xl"
               p="1"
               rounded="md"
               bg="white"
             >
               <Image
-                objectFit="contain"
                 src={data.image}
                 alt="logo"
-                width={"fit-content"}
                 boxSize="100%"
+                h={{ base: "300px", md: "400px" }}
+                // minH={{ base: "300px", md: "400px" }}
               />
             </Box>
           </Flex>

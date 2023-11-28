@@ -16,15 +16,13 @@ const Partners = () => {
       alignItems={"center"}
       justifyContent={"center"}
       display={"flex"}
-      minH={{ base: "280px", lg: "40px", xl: "550px" }}
-      w={{ base: "100%", lg: "86%", xl: "90%" }}
+      minH={{ base: "280px", md: "550px" }}
+      w={{ base: "100%", md: "90%" }}
     >
       <Box
-        minH={{ base: "420px", lg: "40px", xl: "440px" }}
-        justifyContent={{ xl: "space-between" }}
-        w={{ base: "100%", lg: "50%", xl: "100%" }}
-        flexDirection={{ base: "column", lg: "row", xl: "row" }}
-        flexWrap={{ base: "wrap", lg: "wrap", xl: "wrap-reverse" }}
+        minH={{ base: "420px", md: "440px" }}
+        justifyContent={{ md: "space-between" }}
+        w={{ base: "100%", md: "100%" }}
       >
         <Box w={"50%"} minH={"60px"} margin={"auto"} mt={"%"}>
           <Text
@@ -37,7 +35,15 @@ const Partners = () => {
           </Text>
         </Box>
 
-        <Flex mt={"1%"}>
+        <Flex
+          mt={"1%"}
+          margin={"auto"}
+          minH={{ base: "200px", md: "190px" }}
+          w={{ base: "100%", md: "90%" }}
+          flexWrap={{ base: "wrap", md: "wrap" }}
+          justify={"space-between"}
+          justifyContent={"space-around"}
+        >
           {parters?.map((data) => (
             <Flex
               w={"90%"}
@@ -46,7 +52,11 @@ const Partners = () => {
               justifyContent={"center"}
               margin={"auto"}
             >
-              <Box h={"40px"} w={"160px"}>
+              <Box
+                // h={"40px"} w={"160px"}
+                h={{ base: "50px", md: "50px" }}
+                w={{ base: "28%", md: "100px" }}
+              >
                 <Image
                   objectFit="inherit"
                   src={data.image}

@@ -8,50 +8,40 @@ const Send = () => {
   useEffect(() => setSend(sendData), []);
   return (
     <Box
-      w={{ base: "100%", lg: "86%", xl: "100%" }}
+      w={{ base: "100%", md: "100%" }}
       mt={"90px"}
-      minH={{ base: "350px", xl: "550px" }}
+      minH={{ base: "350px", md: "550px" }}
     >
-      <Box minH={{ base: "300px", xl: "550px" }} w={"90%"} margin={"auto"}>
+      <Box minH={{ base: "300px", md: "550px" }} w={"90%"} margin={"auto"}>
         {send?.map((data) => (
           <Flex
-            minH={{ base: "300px", xl: "550px" }}
+            minH={{ base: "300px", md: "550px" }}
             alignItems={"center"}
-            justifyContent={{ xl: "space-between" }}
-            w={{ base: "100%", lg: "50%", xl: "100%" }}
-            flexDirection={{ base: "column", lg: "row", xl: "row" }}
+            justifyContent={{ md: "space-between" }}
+            w={{ base: "100%", md: "100%" }}
+            flexDirection={{ base: "column", md: "row" }}
           >
             <Box
-              minH={{ base: "300px", lg: "50%", xl: "400px" }}
-              w={{ base: "90%", lg: "50%", xl: "90%" }}
+              minH={{ base: "300px", md: "400px" }}
+              w={{ base: "90%", md: "40%" }}
               alignItems={"center"}
               justifyContent={"center"}
               display={"flex"}
               flexDirection={"column"}
             >
-              <Box minH={"80px"} w={"390px"}>
+              <Box minH={"80px"} w={{ base: "300px", md: "320px" }}>
                 <Text
-                  // fontSize={"45px"}
-                  // fontWeight={"bold"}
-                  // textColor={"#40196D"}
-                  fontSize={{ base: "46px", lg: "50%", xl: "40px" }}
+                  fontSize={{ base: "34px", md: "40px" }}
                   fontWeight={"bold"}
                   textColor={"#57357F"}
-                  textAlign={{ base: "center", lg: "0", xl: "0" }}
+                  // textAlign={{ base: "center" }}
                 >
                   {data.head}
                 </Text>
               </Box>
 
-              <Box
-                minH={"80px"}
-                mt={"6"}
-                w={{ base: "80%", lg: "50%", xl: "400px" }}
-              >
-                <Text
-                  fontSize={"15.4px"}
-                  textAlign={{ base: "center", lg: "0", xl: "0" }}
-                >
+              <Box minH={"80px"} mt={"6"} w={{ base: "80%", md: "400px" }}>
+                <Text fontSize={"15.4px"} textAlign={{ base: "center" }}>
                   {data.Comment}
                 </Text>
               </Box>
@@ -71,8 +61,8 @@ const Send = () => {
             </Box>
 
             <Box
-              minH={{ base: "390px", lg: "50%", xl: "400px" }}
-              w={{ base: "100%", lg: "50%", xl: "60%" }}
+              minH={{ base: "390px", md: "400px" }}
+              w={{ base: "100%", md: "45%" }}
               justify={"center"}
               alignItems={"center"}
               backgroundImage={data.Image}
