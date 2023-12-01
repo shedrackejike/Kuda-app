@@ -36,9 +36,6 @@ const Stock = () => {
         >
           {stock?.map((data) => (
             <Box
-              // minH={"60px"}
-              // w={"30%"}
-              // mt={6}
               boxShadow="2xl"
               p="8"
               rounded="md"

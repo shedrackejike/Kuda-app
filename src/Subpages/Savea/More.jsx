@@ -36,7 +36,7 @@ const More = () => {
             display={"flex"}
             flexDirection={"column"}
           >
-            <Box minH={"80px"} w={"390px"}>
+            <Box minH={"80px"} w={{ base: "360px", md: "320px" }}>
               <Text
                 fontSize={{ base: "46px", md: "40px" }}
                 fontWeight={"bold"}
@@ -51,7 +51,7 @@ const More = () => {
               minH={"80px"}
               //   w={"400px"}
               mt={"3"}
-              w={{ base: "80%", md: "400px" }}
+              w={{ base: "100%", md: "400px" }}
             >
               <Text textAlign={{ base: "center", md: "left" }}>
                 {data.Comment}

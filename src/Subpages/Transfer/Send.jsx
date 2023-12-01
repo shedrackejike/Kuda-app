@@ -29,18 +29,18 @@ const Send = () => {
               display={"flex"}
               flexDirection={"column"}
             >
-              <Box minH={"80px"} w={{ base: "300px", md: "320px" }}>
+              <Box minH={"80px"} w={{ base: "360px", md: "320px" }}>
                 <Text
                   fontSize={{ base: "34px", md: "40px" }}
                   fontWeight={"bold"}
                   textColor={"#57357F"}
-                  // textAlign={{ base: "center" }}
+                  textAlign={{ base: "center" }}
                 >
                   {data.head}
                 </Text>
               </Box>
 
-              <Box minH={"80px"} mt={"6"} w={{ base: "80%", md: "400px" }}>
+              <Box minH={"80px"} mt={"6"} w={{ base: "100%", md: "400px" }}>
                 <Text fontSize={"15.4px"} textAlign={{ base: "center" }}>
                   {data.Comment}
                 </Text>

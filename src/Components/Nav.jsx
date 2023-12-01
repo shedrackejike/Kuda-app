@@ -136,6 +136,7 @@ const Nav = () => {
             textAlign={"center"}
             fontSize={"12"}
             cursor={"pointer"}
+            display={{ base: "none", md: "flex" }}
           >
             <Link as={RouterLink} to="/signin">
               Sign In
@@ -150,7 +151,7 @@ const Nav = () => {
             fontSize={"14"}
             fontWeight={"bold"}
             borderRadius={"9"}
-            display={"flex"}
+            display={{ base: "none", md: "flex" }}
             justifyContent={"center"}
             alignItems={"center"}
             cursor={"pointer"}
@@ -264,7 +265,7 @@ const Nav = () => {
               {" "}
               Personal
             </Text>
-            <Link to="/WhyOak"></Link>
+            <Link to="/"></Link>
           </Box>
 
           <Box h={"70px"} alignItems={"center"} display={"flex"}>

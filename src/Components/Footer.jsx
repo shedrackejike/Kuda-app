@@ -133,7 +133,7 @@ const Footer = () => {
         </Box>
       </Flex>
 
-      <Box minH={"60px"} w={{ base: "100%", md: "40%" }} bg={"red"}>
+      <Box minH={"60px"} w={{ base: "100%", md: "40%" }}>
         <Flex
           minH={"50px"}
           justifyContent={{ base: "space-around", md: "space-between" }}

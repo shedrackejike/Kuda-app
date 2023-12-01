@@ -28,19 +28,31 @@ const Home = () => {
                 fontSize={"43px"}
                 fontWeight={"extrabold"}
                 textColor={"#57357F"}
+                textAlign={{ base: "center", md: "left" }}
               >
                 The money app for Africans.
               </Text>
             </Box>
 
-            <Box minH={"22%"} w={{ base: "100%", md: "70%" }} mt={"9"}>
+            <Box
+              minH={"22%"}
+              w={{ base: "100%", md: "70%" }}
+              mt={"9"}
+              textAlign={{ base: "center", md: "left" }}
+            >
               <Text fontSize={"20px"}>
                 Make free transfers, enjoy cashless payment options and earn
                 interest on your savings with Kuda.
               </Text>
             </Box>
 
-            <Flex h={"13%"} w={"50"} mt={"9"}>
+            <Flex
+              h={"13%"}
+              mt={"9"}
+              justify={{ base: "center", md: "left" }}
+              align={{ base: "center", md: "flex-start" }}
+              // align={{ base: "left", md: "center" }}
+            >
               <Link h={"12"} w={"30%"}>
                 <Image
                   objectFit="contain"
@@ -61,7 +73,7 @@ const Home = () => {
                 />
               </Link>
             </Flex>
-            <Flex mt={"5"} h={"13%"} w={"50"}>
+            <Flex ml={{ base: "10px", md: "0" }} mt={"5"} h={"13%"} w={"50"}>
               <Text fontSize={"12"}>
                 Fully Licensed by the CBN 🙌 Deposits lnsured by
               </Text>
@@ -293,6 +305,7 @@ const Home = () => {
                 fontSize={{ base: "29px", md: "40px" }}
                 fontWeight={"bold"}
                 textColor={"#57357F"}
+                textAlign={{ base: "center", md: "left" }}
               >
                 Your phone + our app + a debit card = a simpler life.
               </Text>
@@ -306,6 +319,7 @@ const Home = () => {
               justifyContent={{ base: "center" }}
               display={{ base: "flex" }}
               margin={{ base: "auto" }}
+              textAlign={{ base: "center", md: "left" }}
             >
               <Text>
                 We designed a money app for your lifestyle, and you can get a
@@ -390,10 +404,20 @@ const Home = () => {
               </Text>
             </Box>
 
-            <Box h={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
+            <Box
+              //  h={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}
+              mt={2}
+              h={"35%"}
+              w={{ base: "80%", md: "70%" }}
+              alignItems={{ base: "center" }}
+              justifyContent={{ base: "center" }}
+              display={{ base: "flex" }}
+              margin={{ base: "auto" }}
+              textAlign={{ base: "center", md: "left" }}
+            >
               <Text
                 fontSize={"15.4px"}
-                textAlign={{ base: "center", md: "none" }}
+                // textAlign={{ base: "center", md: "left" }}
               >
                 Save it, spend it, send it. It’s up to you. Whatever you choose
                 to do with your money, we’ll make sure it’s done better and free
@@ -435,9 +459,7 @@ const Home = () => {
               </Text>
             </Box>
             <Box h={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
-              <Text
-              // textAlign={{ base: "center", md: "0" }}
-              >
+              <Text textAlign={{ base: "center", md: "left" }}>
                 You can’t avoid spending. That’s how you pay for your needs. But
                 we can help you put money away every time you pay for something.
                 Just set a percentage to save and watch your money grow.
@@ -515,9 +537,7 @@ const Home = () => {
               </Text>
             </Box>
             <Box minH={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
-              <Text
-              // textAlign={{ base: "center", md: "0" }}
-              >
+              <Text textAlign={{ base: "center", md: "left" }}>
                 Life happens. Milk spills. Debit cards go missing. If that ever
                 happens, you can block your missing card on the app so no one
                 can use it. We’d like to see them try.
@@ -570,16 +590,14 @@ const Home = () => {
               </Text>
             </Box>
             <Box minH={"25%"} w={{ base: "80%", md: "70%" }} mt={"2"}>
-              <Text
-              // textAlign={{ base: "center", lg: "0", xl: "0" }}
-              >
+              <Text textAlign={{ base: "center", md: "0" }}>
                 You can chat with us on the app, slide into our DMs, tweet,
                 leave an Instagram comment, send an email or call. However you
                 choose to reach out, there’ll always be a friendly person there
                 to make your life easy.
               </Text>
             </Box>
-            <Flex minH={"18%"} w={"70%"} mt={"2"}>
+            <Flex minH={"18%"} w={"70%"} mt={"7"}>
               <Link>
                 <Text
                   textColor={"#57357F"}
@@ -652,9 +670,7 @@ const Home = () => {
               </Text>
             </Box>
             <Box minH={"25%"} mt={"6"} w={{ base: "80%", md: "70%" }}>
-              <Text
-              //  textAlign={{ base: "center", lg: "0", xl: "0" }}
-              >
+              <Text textAlign={{ base: "center", md: "left" }}>
                 We’re serious about free banking, and we will never, ever charge
                 you for anything without your consent.
               </Text>
