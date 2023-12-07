@@ -24,7 +24,7 @@ const Partners = () => {
         justifyContent={{ md: "space-between" }}
         w={{ base: "100%", md: "100%" }}
       >
-        <Box w={"50%"} minH={"60px"} margin={"auto"} mt={"%"}>
+        <Box w={"50%"} minH={"60px"} margin={"auto"}>
           <Text
             textAlign={"center"}
             fontSize={"30px"}
@@ -38,24 +38,23 @@ const Partners = () => {
         <Flex
           mt={"1%"}
           margin={"auto"}
-          minH={{ base: "200px", md: "190px" }}
+          minH={{ base: "200px", md: "100px" }}
           w={{ base: "100%", md: "90%" }}
-          flexWrap={{ base: "wrap", md: "wrap" }}
           justify={"space-between"}
+          flexWrap={{ base: "wrap", md: "nowrap" }}
           justifyContent={"space-around"}
         >
           {parters?.map((data) => (
             <Flex
-              w={"90%"}
-              minH={"80px"}
+              key={data.id}
+              minH={{ base: "90px", md: "190px" }}
+              w={{ base: "50%", md: "90%" }}
               alignItems={"center"}
               justifyContent={"center"}
-              margin={"auto"}
             >
               <Box
-                // h={"40px"} w={"160px"}
                 h={{ base: "50px", md: "50px" }}
-                w={{ base: "28%", md: "100px" }}
+                w={{ base: "58%", md: "100px" }}
               >
                 <Image
                   objectFit="inherit"
